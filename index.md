@@ -43,5 +43,13 @@ src: ./slides/10-occams-razor.md
 ---
 
 ---
+src: ./slides/11-the-vision.md
+---
+
+---
+src: ./slides/12-key-takeaways.md
+---
+
+---
 src: ./slides/99-conclusion.md
 ---
