@@ -1,15 +1,14 @@
 ---
 theme: ../
 layout: title
-link: https://lascari-ai.github.io/skill-issue-presentation/
+link: https://lascari-ai-learning.github.io/Skill-Issue/
 ---
 
 ::title::
 The Skill Issue
 
 ::subtitle::
-Agents Decoded in 2026
-
+Agentic Coding in 2026
 
 
 <!--
