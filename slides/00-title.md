@@ -1,19 +1,19 @@
 ---
 theme: ../
 layout: title
-link: https://lascari-ai.github.io/what-is-claude-code/
+link: https://lascari-ai.github.io/skill-issue-presentation/
 ---
 
 ::title::
-What is Claude Code?
+The Skill Issue
 
 ::subtitle::
-...and Why You Should Care
+Agents Decoded in 2026
 
 
 
 <!--
-Let's cut through the hype. You're here because you've seen AI coding demos and wondered if they actually work in production. Today we'll look at Claude Code - not as another "revolutionary" tool, but as a practical engineering instrument with clear strengths, real limitations, and specific use cases where it excels.
+Let's cut through the hype. You've seen the AI coding demos on Twitter - vibe coding, agents building entire apps, 10x productivity claims. But what's the reality? Today we're going to talk about real value versus demo magic, and why the gap between success and failure comes down to one thing: skills.
 -->
 
 <style>

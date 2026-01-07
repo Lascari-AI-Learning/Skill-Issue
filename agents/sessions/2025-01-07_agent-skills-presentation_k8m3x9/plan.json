@@ -4,8 +4,8 @@
   "session_id": "2025-01-07_agent-skills-presentation_k8m3x9",
   "spec_reference": "./spec.md",
   "created_at": "2025-01-07T14:00:00Z",
-  "updated_at": "2025-01-07T14:00:00Z",
-  "status": "draft",
+  "updated_at": "2025-01-07T15:00:00Z",
+  "status": "complete",
 
   "checkpoints": [
     {
@@ -13,7 +13,7 @@
       "title": "Core Narrative Flow",
       "goal": "Create the essential story arc: Title → Problem → Hook → Solution intro. Produces a minimal but complete narrative that could be delivered as a 5-min pitch.",
       "prerequisites": [],
-      "status": "pending",
+      "status": "completed",
       "file_context": {
         "beginning": {
           "files": [
@@ -44,7 +44,334 @@
           "Check narrative flow makes sense as a mini-presentation"
         ]
       },
-      "task_groups": []
+      "task_groups": [
+        {
+          "id": "1.1",
+          "title": "Update Title Slide",
+          "objective": "Transform the title from 'What is Claude Code?' to 'The Skill Issue' with proper subtitle and QR code",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "1.1.1",
+              "title": "Update title slide content",
+              "file_path": "slides/00-title.md",
+              "description": "Change the presentation title to 'The Skill Issue', update subtitle to 'Agents Decoded in 2026', update or remove the QR code link, and update speaker notes for the new opening hook.",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "slides/00-title.md",
+                    "lines": "all",
+                    "purpose": "Understand current title slide structure and layout slot syntax"
+                  },
+                  {
+                    "file": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md",
+                    "lines": "159-165",
+                    "purpose": "Get exact title and subtitle text from spec"
+                  }
+                ],
+                "related_files": []
+              },
+              "depends_on": [],
+              "actions": [
+                {
+                  "id": "1.1.1.1",
+                  "command": "UPDATE ::title:: slot: REPLACE 'What is Claude Code?' with 'The Skill Issue'",
+                  "file": "slides/00-title.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "1.1.1.2",
+                  "command": "UPDATE ::subtitle:: slot: REPLACE '...and Why You Should Care' with 'Agents Decoded in 2026'",
+                  "file": "slides/00-title.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "1.1.1.3",
+                  "command": "UPDATE link frontmatter: REPLACE with presentation-specific link or REMOVE if not needed",
+                  "file": "slides/00-title.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "1.1.1.4",
+                  "command": "UPDATE speaker notes: REPLACE with opening hook notes about 'cutting through the hype' and 'real value vs Twitter demos'",
+                  "file": "slides/00-title.md",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "title": "Create Problem Overview Slide",
+          "objective": "New slide introducing the core problem (placeholder for Cortex data) - sets up 'why this matters'",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "1.2.1",
+              "title": "Create problem overview slide",
+              "file_path": "slides/01-problem-overview.md",
+              "description": "Create a new slide introducing the gap between AI coding demos and production reality. Include placeholder for Cortex 2026 stats (90% adoption), the productivity paradox concept, and 'AI amplifies whatever you have' theme.",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md",
+                    "lines": "167-184",
+                    "purpose": "Get problem section content from spec outline"
+                  },
+                  {
+                    "file": "slides/00-title.md",
+                    "lines": "all",
+                    "purpose": "Reference frontmatter structure and styling"
+                  }
+                ],
+                "related_files": []
+              },
+              "depends_on": ["1.1.1"],
+              "actions": [
+                {
+                  "id": "1.2.1.1",
+                  "command": "CREATE FILE slides/01-problem-overview.md with frontmatter (theme: ../, layout: default)",
+                  "file": "slides/01-problem-overview.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "1.2.1.2",
+                  "command": "ADD headline: 'The Problem' centered at top",
+                  "file": "slides/01-problem-overview.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "1.2.1.3",
+                  "command": "ADD bullet points: 90% AI adoption (placeholder), productivity paradox intro, 'AI amplifies whatever you have'",
+                  "file": "slides/01-problem-overview.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "1.2.1.4",
+                  "command": "ADD speaker notes explaining Cortex report context and 'more code, more bugs' theme",
+                  "file": "slides/01-problem-overview.md",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "title": "Update About Me with Hook Structure",
+          "objective": "Restructure about-me to include the 'proof of real value' hook with placeholders for numbers",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "1.3.1",
+              "title": "Restructure about-me slide with hook",
+              "file_path": "slides/02-about-me.md",
+              "description": "Update the about-me slide to include the credibility hook with v-clicks for dramatic reveal. Keep core bio (Applied AI Engineer, 3 years GenAI) but add the 'Why should you trust me?' section with Ford's numbers: +114,427 lines, ~$864 tokens, $23,480 income. End with '95% of the code was written by AI' kicker.",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "slides/02-about-me.md",
+                    "lines": "all",
+                    "purpose": "Understand current about-me structure and speaker layout"
+                  },
+                  {
+                    "file": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md",
+                    "lines": "186-195",
+                    "purpose": "Get hook structure and exact numbers from spec"
+                  }
+                ],
+                "related_files": []
+              },
+              "depends_on": ["1.2.1"],
+              "actions": [
+                {
+                  "id": "1.3.1.1",
+                  "command": "UPDATE about-me section: Keep core info (Applied AI Engineer, 3 years GenAI, 30+ projects)",
+                  "file": "slides/02-about-me.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "1.3.1.2",
+                  "command": "ADD hook section with v-clicks: 'Why should you trust me?'",
+                  "file": "slides/02-about-me.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "1.3.1.3",
+                  "command": "ADD v-click item 1: Line count (+114,427 lines added)",
+                  "file": "slides/02-about-me.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "1.3.1.4",
+                  "command": "ADD v-click item 2: Token spend (~$864 in Claude Code)",
+                  "file": "slides/02-about-me.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "1.3.1.5",
+                  "command": "ADD v-click item 3: Income ($23,480 December)",
+                  "file": "slides/02-about-me.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "1.3.1.6",
+                  "command": "ADD kicker line: '95% of the code was written by AI'",
+                  "file": "slides/02-about-me.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "1.3.1.7",
+                  "command": "UPDATE speaker notes: Emphasize 'this is not a flex, it is proof of real value'",
+                  "file": "slides/02-about-me.md",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1.4",
+          "title": "Create Solution Transition Slide",
+          "objective": "Quick transition slide that pivots from problem to 'the answer is skills'",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "1.4.1",
+              "title": "Create solution transition slide",
+              "file_path": "slides/03-the-solution.md",
+              "description": "Create a brief transition slide that pivots from the problem/hook section to introducing skills as the solution. This is a pivot point, not a detailed explanation - that comes in CP3.",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md",
+                    "lines": "220-223",
+                    "purpose": "Get solution section intro from spec"
+                  },
+                  {
+                    "file": "slides/00-title.md",
+                    "lines": "1-6",
+                    "purpose": "Reference frontmatter structure"
+                  }
+                ],
+                "related_files": []
+              },
+              "depends_on": ["1.3.1"],
+              "actions": [
+                {
+                  "id": "1.4.1.1",
+                  "command": "CREATE FILE slides/03-the-solution.md with frontmatter (theme: ../, layout: default)",
+                  "file": "slides/03-the-solution.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "1.4.1.2",
+                  "command": "ADD headline: 'What is the Answer?' or 'The Solution' centered",
+                  "file": "slides/03-the-solution.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "1.4.1.3",
+                  "command": "ADD teaser content: 'Skills - encoding your engineering expertise for AI agents'",
+                  "file": "slides/03-the-solution.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "1.4.1.4",
+                  "command": "ADD speaker notes: Brief transition explanation, sets up skills deep dive",
+                  "file": "slides/03-the-solution.md",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1.5",
+          "title": "Reorganize File Structure",
+          "objective": "Rename conclusion slide to 99-conclusion.md, delete obsolete slides, run build:slides",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "1.5.1",
+              "title": "Rename conclusion slide",
+              "file_path": "slides/03-conclusion.md",
+              "description": "Move the conclusion/Let's Connect slide to slides/99-conclusion.md so it appears at the end of the presentation ordering.",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "slides/03-conclusion.md",
+                    "lines": "all",
+                    "purpose": "Verify file exists and content is correct before moving"
+                  }
+                ],
+                "related_files": []
+              },
+              "depends_on": ["1.4.1"],
+              "actions": [
+                {
+                  "id": "1.5.1.1",
+                  "command": "MOVE slides/03-conclusion.md to slides/99-conclusion.md",
+                  "file": "slides/03-conclusion.md",
+                  "status": "pending"
+                }
+              ]
+            },
+            {
+              "id": "1.5.2",
+              "title": "Delete obsolete agenda slide",
+              "file_path": "slides/01-what-well-cover.md",
+              "description": "Remove the old 'What We'll Cover' agenda slide that no longer fits the new presentation narrative.",
+              "status": "pending",
+              "context": {
+                "read_before": [],
+                "related_files": []
+              },
+              "depends_on": ["1.5.1"],
+              "actions": [
+                {
+                  "id": "1.5.2.1",
+                  "command": "DELETE slides/01-what-well-cover.md",
+                  "file": "slides/01-what-well-cover.md",
+                  "status": "pending"
+                }
+              ]
+            },
+            {
+              "id": "1.5.3",
+              "title": "Build and verify slides",
+              "file_path": null,
+              "description": "Run the build script to regenerate index.md and verify all slides render correctly via the dev server.",
+              "status": "pending",
+              "context": {
+                "read_before": [],
+                "related_files": ["index.md"]
+              },
+              "depends_on": ["1.5.2"],
+              "actions": [
+                {
+                  "id": "1.5.3.1",
+                  "command": "RUN npm run build:slides to regenerate index.md from slides directory",
+                  "file": null,
+                  "status": "pending"
+                },
+                {
+                  "id": "1.5.3.2",
+                  "command": "RUN npm run dev to start dev server and verify slides render at localhost:3030",
+                  "file": null,
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 2,
@@ -79,7 +406,321 @@
           "Check problem → hook → solution flow is compelling"
         ]
       },
-      "task_groups": []
+      "task_groups": [
+        {
+          "id": "2.1",
+          "title": "Expand Problem Slide with Cortex Data",
+          "objective": "Add the full Cortex 2026 stats (90% adoption, PRs +20%, incidents +23.5%, change failure +30%)",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "2.1.1",
+              "title": "Expand problem slide with Cortex statistics",
+              "file_path": "slides/01-the-problem.md",
+              "description": "Rename slides/01-problem-overview.md to slides/01-the-problem.md and expand with full Cortex 2026 data: 90% adoption headline, productivity paradox stats (PRs +20%, Incidents +23.5%, Change failure +30%), and 'AI amplifies whatever you have' conclusion.",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "slides/01-problem-overview.md",
+                    "lines": "all",
+                    "purpose": "Get current placeholder content to expand"
+                  },
+                  {
+                    "file": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md",
+                    "lines": "167-184",
+                    "purpose": "Get full Cortex data and problem section details"
+                  }
+                ],
+                "related_files": []
+              },
+              "depends_on": [],
+              "actions": [
+                {
+                  "id": "2.1.1.1",
+                  "command": "RENAME slides/01-problem-overview.md to slides/01-the-problem.md",
+                  "file": "slides/01-problem-overview.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "2.1.1.2",
+                  "command": "UPDATE content: ADD Cortex 2026 headline '90% adoption, zero standardization'",
+                  "file": "slides/01-the-problem.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "2.1.1.3",
+                  "command": "ADD stats grid: PRs per author +20%, Incidents per PR +23.5%, Change failure rate +30%",
+                  "file": "slides/01-the-problem.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "2.1.1.4",
+                  "command": "UPDATE speaker notes with full Cortex report context and link",
+                  "file": "slides/01-the-problem.md",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "title": "Create Bell Curve Meme Slide",
+          "objective": "The 'skill issue' meme - left: let AI write code, middle: crying, right: let AI write code",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "2.2.1",
+              "title": "Create skill issue meme slide",
+              "file_path": "slides/02-the-meme.md",
+              "description": "Create a new slide featuring the bell curve meme (skill-issue.jpg). Left side: 'Let AI Write the Code', Middle (crying): 'AI Cannot Match My Skills', Right (enlightened): 'Let AI Write the Code'. Include speaker notes about the reframe.",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md",
+                    "lines": "179-184",
+                    "purpose": "Get meme structure and messaging from spec"
+                  }
+                ],
+                "related_files": ["public/skill-issue.jpg"]
+              },
+              "depends_on": ["2.1.1"],
+              "actions": [
+                {
+                  "id": "2.2.1.1",
+                  "command": "CREATE FILE slides/02-the-meme.md with frontmatter (theme: ../, layout: default)",
+                  "file": "slides/02-the-meme.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "2.2.1.2",
+                  "command": "ADD bell curve meme image placeholder: img src /skill-issue.jpg",
+                  "file": "slides/02-the-meme.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "2.2.1.3",
+                  "command": "ADD caption text for bell curve: Left 'Let AI Write the Code', Middle 'AI Cannot Match My Skills', Right 'Let AI Write the Code'",
+                  "file": "slides/02-the-meme.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "2.2.1.4",
+                  "command": "ADD speaker notes: 'Everyone has seen this meme' + reframe: for skilled engineers AI is a HUGE force multiplier",
+                  "file": "slides/02-the-meme.md",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "title": "Add Personal Anecdote",
+          "objective": "Ford's story about the bad client project with 5000-line files",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "2.3.1",
+              "title": "Add personal anecdote to problem slide",
+              "file_path": "slides/01-the-problem.md",
+              "description": "Add Ford's personal anecdote to the problem slide: recent client project, UI engineer using Cursor without understanding, 5000+ line files, hardcoded strings, 20 components per file. Key message: 'Not his fault - he didn't know what he was doing'.",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "slides/01-the-problem.md",
+                    "lines": "all",
+                    "purpose": "See current state after Cortex data expansion"
+                  },
+                  {
+                    "file": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md",
+                    "lines": "173-178",
+                    "purpose": "Get anecdote details from spec"
+                  }
+                ],
+                "related_files": []
+              },
+              "depends_on": ["2.1.1"],
+              "actions": [
+                {
+                  "id": "2.3.1.1",
+                  "command": "ADD section: 'I have seen this firsthand' with personal anecdote",
+                  "file": "slides/01-the-problem.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "2.3.1.2",
+                  "command": "ADD details: client project, UI engineer + Cursor, 5000+ line files, hardcoded strings, 20 components per file",
+                  "file": "slides/01-the-problem.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "2.3.1.3",
+                  "command": "ADD lesson: 'Not his fault - he did not know what he was doing'",
+                  "file": "slides/01-the-problem.md",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.4",
+          "title": "Separate Hook into Own Slide",
+          "objective": "Extract the dramatic reveal (numbers) into its own slide with v-clicks",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "2.4.1",
+              "title": "Create dedicated hook slide with v-clicks",
+              "file_path": "slides/04-the-hook.md",
+              "description": "Create a new slide dedicated to the dramatic reveal of Ford's numbers. Use v-clicks to reveal: 1) Line count (+114,427), 2) Token spend (~$864), 3) Income ($23,480 December). End with kicker: '95% of the code was written by AI'.",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "slides/02-about-me.md",
+                    "lines": "all",
+                    "purpose": "Get hook content to extract"
+                  },
+                  {
+                    "file": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md",
+                    "lines": "186-195",
+                    "purpose": "Get exact numbers and hook structure"
+                  }
+                ],
+                "related_files": []
+              },
+              "depends_on": ["2.3.1"],
+              "actions": [
+                {
+                  "id": "2.4.1.1",
+                  "command": "CREATE FILE slides/04-the-hook.md with frontmatter",
+                  "file": "slides/04-the-hook.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "2.4.1.2",
+                  "command": "ADD headline: 'Why should you trust me?' or 'The Proof'",
+                  "file": "slides/04-the-hook.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "2.4.1.3",
+                  "command": "ADD v-click 1: Line count (+114,427 lines added) with visual styling",
+                  "file": "slides/04-the-hook.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "2.4.1.4",
+                  "command": "ADD v-click 2: Token spend (~$864 in Claude Code)",
+                  "file": "slides/04-the-hook.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "2.4.1.5",
+                  "command": "ADD v-click 3: Income ($23,480 December)",
+                  "file": "slides/04-the-hook.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "2.4.1.6",
+                  "command": "ADD kicker with v-click: '95% of the code was written by AI'",
+                  "file": "slides/04-the-hook.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "2.4.1.7",
+                  "command": "ADD speaker notes: 'This is not a flex - it is proof of real value'",
+                  "file": "slides/04-the-hook.md",
+                  "status": "pending"
+                }
+              ]
+            },
+            {
+              "id": "2.4.2",
+              "title": "Update about-me slide and renumber",
+              "file_path": "slides/03-about-me.md",
+              "description": "Rename slides/02-about-me.md to slides/03-about-me.md. Remove the hook section (now in 04-the-hook.md) and keep only the core bio content.",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "slides/02-about-me.md",
+                    "lines": "all",
+                    "purpose": "Identify what to keep vs remove"
+                  }
+                ],
+                "related_files": ["slides/04-the-hook.md"]
+              },
+              "depends_on": ["2.4.1"],
+              "actions": [
+                {
+                  "id": "2.4.2.1",
+                  "command": "RENAME slides/02-about-me.md to slides/03-about-me.md",
+                  "file": "slides/02-about-me.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "2.4.2.2",
+                  "command": "REMOVE hook section from about-me (moved to 04-the-hook.md)",
+                  "file": "slides/03-about-me.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "2.4.2.3",
+                  "command": "KEEP core bio: Applied AI Engineer, 3 years GenAI, 30+ projects",
+                  "file": "slides/03-about-me.md",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.5",
+          "title": "Renumber & Build",
+          "objective": "Renumber solution slide for proper flow, run build:slides",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "2.5.1",
+              "title": "Renumber solution slide and build",
+              "file_path": "slides/05-the-solution.md",
+              "description": "Rename slides/03-the-solution.md to slides/05-the-solution.md for proper ordering after the hook slide. Run build:slides and dev server to verify.",
+              "status": "pending",
+              "context": {
+                "read_before": [],
+                "related_files": ["index.md"]
+              },
+              "depends_on": ["2.4.2"],
+              "actions": [
+                {
+                  "id": "2.5.1.1",
+                  "command": "RENAME slides/03-the-solution.md to slides/05-the-solution.md",
+                  "file": "slides/03-the-solution.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "2.5.1.2",
+                  "command": "RUN npm run build:slides to regenerate index.md",
+                  "file": null,
+                  "status": "pending"
+                },
+                {
+                  "id": "2.5.1.3",
+                  "command": "RUN npm run dev to verify slides render correctly",
+                  "file": null,
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 3,
@@ -111,7 +752,234 @@
           "Check skills concept is introduced clearly"
         ]
       },
-      "task_groups": []
+      "task_groups": [
+        {
+          "id": "3.1",
+          "title": "Create The Question Slide",
+          "objective": "Transition slide: 'What are we doing in 2026 to fix this?'",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "3.1.1",
+              "title": "Create the question slide",
+              "file_path": "slides/05-the-question.md",
+              "description": "Create a transition slide that pivots from the problem/hook to the solution. Content: 'Now that we've defined the problem... What are we doing in 2026 to fix this? What should you allocate your time and resources to? How do you build TRUST into your AI system?'",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md",
+                    "lines": "197-201",
+                    "purpose": "Get the question slide content from spec"
+                  }
+                ],
+                "related_files": []
+              },
+              "depends_on": [],
+              "actions": [
+                {
+                  "id": "3.1.1.1",
+                  "command": "RENAME slides/05-the-solution.md to slides/06-the-solution.md to make room",
+                  "file": "slides/05-the-solution.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "3.1.1.2",
+                  "command": "CREATE FILE slides/05-the-question.md with frontmatter",
+                  "file": "slides/05-the-question.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "3.1.1.3",
+                  "command": "ADD content: 'What are we doing in 2026?', 'What should you allocate time/resources to?', 'How do you build TRUST?'",
+                  "file": "slides/05-the-question.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "3.1.1.4",
+                  "command": "ADD speaker notes: This is the pivot moment, set up the mental model",
+                  "file": "slides/05-the-question.md",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "title": "Create Mental Model Slide",
+          "objective": "Junior engineer analogy, standardization (commit rules, tests, docs)",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "3.2.1",
+              "title": "Create mental model slide",
+              "file_path": "slides/06-mental-model.md",
+              "description": "Create slide explaining the junior engineer analogy: 'This isn't new - every engineering team already does this'. Cover: determining tasks, handing off, reviewing PRs, implicit/explicit standardization (commit rules, tests, GitHub Actions, company protocols, documentation).",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md",
+                    "lines": "203-217",
+                    "purpose": "Get mental model content from spec"
+                  }
+                ],
+                "related_files": []
+              },
+              "depends_on": ["3.1.1"],
+              "actions": [
+                {
+                  "id": "3.2.1.1",
+                  "command": "RENAME slides/06-the-solution.md to slides/08-the-solution.md to make room for new slides",
+                  "file": "slides/06-the-solution.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "3.2.1.2",
+                  "command": "CREATE FILE slides/06-mental-model.md with frontmatter",
+                  "file": "slides/06-mental-model.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "3.2.1.3",
+                  "command": "ADD headline: 'This Isn't New' or 'The Mental Model'",
+                  "file": "slides/06-mental-model.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "3.2.1.4",
+                  "command": "ADD junior engineer workflow: determine task -> hand off -> review PR -> HOW is not controlled",
+                  "file": "slides/06-mental-model.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "3.2.1.5",
+                  "command": "ADD standardization list: commit rules, tests must pass, GitHub Actions, company protocols, documentation",
+                  "file": "slides/06-mental-model.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "3.2.1.6",
+                  "command": "ADD key insight: 'Same docs you would give a new junior = what you give the LLM'",
+                  "file": "slides/06-mental-model.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "3.2.1.7",
+                  "command": "ADD speaker notes explaining the analogy",
+                  "file": "slides/06-mental-model.md",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "title": "Create What Is A Skill Slide",
+          "objective": "Skills definition, Anthropic structure, self-discovery",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "3.3.1",
+              "title": "Create what is a skill slide",
+              "file_path": "slides/07-what-is-a-skill.md",
+              "description": "Create slide defining what skills are: opinionated way of formatting Markdown files, allows agent to self-discover processes, Anthropic recently released this as standard structure, not complicated to set up.",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md",
+                    "lines": "219-223",
+                    "purpose": "Get skills definition from spec"
+                  }
+                ],
+                "related_files": []
+              },
+              "depends_on": ["3.2.1"],
+              "actions": [
+                {
+                  "id": "3.3.1.1",
+                  "command": "CREATE FILE slides/07-what-is-a-skill.md with frontmatter",
+                  "file": "slides/07-what-is-a-skill.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "3.3.1.2",
+                  "command": "ADD headline: 'What is a Skill?'",
+                  "file": "slides/07-what-is-a-skill.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "3.3.1.3",
+                  "command": "ADD bullet: Skills = opinionated way of formatting Markdown files",
+                  "file": "slides/07-what-is-a-skill.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "3.3.1.4",
+                  "command": "ADD bullet: Allows agent to SELF-DISCOVER processes within the skill",
+                  "file": "slides/07-what-is-a-skill.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "3.3.1.5",
+                  "command": "ADD bullet: Anthropic recently released this, becoming the standard structure",
+                  "file": "slides/07-what-is-a-skill.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "3.3.1.6",
+                  "command": "ADD bullet: Not that complicated to set up",
+                  "file": "slides/07-what-is-a-skill.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "3.3.1.7",
+                  "command": "ADD speaker notes about skills background",
+                  "file": "slides/07-what-is-a-skill.md",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3.4",
+          "title": "Build & Verify",
+          "objective": "Run build:slides and verify",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "3.4.1",
+              "title": "Build and verify CP3 slides",
+              "file_path": null,
+              "description": "Run build:slides to regenerate index.md and verify all slides render correctly.",
+              "status": "pending",
+              "context": {
+                "read_before": [],
+                "related_files": ["index.md"]
+              },
+              "depends_on": ["3.3.1"],
+              "actions": [
+                {
+                  "id": "3.4.1.1",
+                  "command": "RUN npm run build:slides",
+                  "file": null,
+                  "status": "pending"
+                },
+                {
+                  "id": "3.4.1.2",
+                  "command": "RUN npm run dev and verify slides 05-07 render correctly",
+                  "file": null,
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 4,
@@ -144,7 +1012,240 @@
           "Check example skill walkthrough is clear (5-7 min content)"
         ]
       },
-      "task_groups": []
+      "task_groups": [
+        {
+          "id": "4.1",
+          "title": "Create How Skills Work Slide",
+          "objective": "File structure, progressive disclosure, prompt appearance",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "4.1.1",
+              "title": "Create how skills work slide",
+              "file_path": "slides/08-how-skills-work.md",
+              "description": "Create slide showing how skills work technically: top-level structure, how it appears in the prompt (model sees skills available, thinks 'I need to acquire this skill', reads skill files, knowledge is now in context), file tree structure (SKILL.md, references/), progressive disclosure concept.",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md",
+                    "lines": "225-236",
+                    "purpose": "Get how skills work content from spec"
+                  }
+                ],
+                "related_files": []
+              },
+              "depends_on": [],
+              "actions": [
+                {
+                  "id": "4.1.1.1",
+                  "command": "RENAME slides/08-the-solution.md to DELETE (this slide is now obsolete)",
+                  "file": "slides/08-the-solution.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "4.1.1.2",
+                  "command": "CREATE FILE slides/08-how-skills-work.md with frontmatter",
+                  "file": "slides/08-how-skills-work.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "4.1.1.3",
+                  "command": "ADD headline: 'How Skills Work'",
+                  "file": "slides/08-how-skills-work.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "4.1.1.4",
+                  "command": "ADD prompt flow: Model sees skills -> thinks 'I need this skill' -> reads skill files -> knowledge in context",
+                  "file": "slides/08-how-skills-work.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "4.1.1.5",
+                  "command": "ADD file tree structure: SKILL.md (main file), references/ (linked docs)",
+                  "file": "slides/08-how-skills-work.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "4.1.1.6",
+                  "command": "ADD key concept: Progressive disclosure - only load context when needed",
+                  "file": "slides/08-how-skills-work.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "4.1.1.7",
+                  "command": "ADD speaker notes about technical implementation",
+                  "file": "slides/08-how-skills-work.md",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "title": "Create Example Skill Slide",
+          "objective": "Ford's file tree, specific skill walkthrough",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "4.2.1",
+              "title": "Create example skill slide",
+              "file_path": "slides/09-example-skill.md",
+              "description": "Create slide showing Ford's Claude Code config file tree and a specific skill walkthrough. Include image placeholder for public/skill-tree.png. Note: 'This isn't comprehensive - this is how I work'.",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md",
+                    "lines": "251-265",
+                    "purpose": "Get example skill content from spec"
+                  }
+                ],
+                "related_files": ["public/skill-tree.png"]
+              },
+              "depends_on": ["4.1.1"],
+              "actions": [
+                {
+                  "id": "4.2.1.1",
+                  "command": "CREATE FILE slides/09-example-skill.md with frontmatter",
+                  "file": "slides/09-example-skill.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "4.2.1.2",
+                  "command": "ADD headline: 'Example: My Skills Setup'",
+                  "file": "slides/09-example-skill.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "4.2.1.3",
+                  "command": "ADD image placeholder for skill-tree.png showing Ford's Claude Code config",
+                  "file": "slides/09-example-skill.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "4.2.1.4",
+                  "command": "ADD caption: 'I have a lot of skills/commands built out - this is how I work'",
+                  "file": "slides/09-example-skill.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "4.2.1.5",
+                  "command": "ADD specific skill walkthrough section (TBD which skill)",
+                  "file": "slides/09-example-skill.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "4.2.1.6",
+                  "command": "ADD speaker notes: 5-7 min for skills section, light touch",
+                  "file": "slides/09-example-skill.md",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "title": "Create Occam's Razor Slide",
+          "objective": "How to build skills: work in the loop first, then step out",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "4.3.1",
+              "title": "Create Occam's razor slide",
+              "file_path": "slides/10-occams-razor.md",
+              "description": "Create slide about the right approach to building skills: Common mistake (give everything to agent right away), Right approach (work IN the loop first, iterate until happy, THEN figure out how to step out), Keep it simple.",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md",
+                    "lines": "254-264",
+                    "purpose": "Get Occam's razor content from spec"
+                  }
+                ],
+                "related_files": []
+              },
+              "depends_on": ["4.2.1"],
+              "actions": [
+                {
+                  "id": "4.3.1.1",
+                  "command": "CREATE FILE slides/10-occams-razor.md with frontmatter",
+                  "file": "slides/10-occams-razor.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "4.3.1.2",
+                  "command": "ADD headline: 'Building Skills: Occam's Razor'",
+                  "file": "slides/10-occams-razor.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "4.3.1.3",
+                  "command": "ADD common mistake: giving everything to agent right out the gate -> leads to bad skills",
+                  "file": "slides/10-occams-razor.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "4.3.1.4",
+                  "command": "ADD right approach: Work IN the loop first -> Iterate until happy -> THEN step out",
+                  "file": "slides/10-occams-razor.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "4.3.1.5",
+                  "command": "ADD key principle: Keep it as simple as possible - don't add complexity until you need it",
+                  "file": "slides/10-occams-razor.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "4.3.1.6",
+                  "command": "ADD speaker notes about simplicity principle",
+                  "file": "slides/10-occams-razor.md",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "title": "Build & Verify",
+          "objective": "Run build:slides and verify",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "4.4.1",
+              "title": "Build and verify CP4 slides",
+              "file_path": null,
+              "description": "Run build:slides to regenerate index.md and verify all slides render correctly.",
+              "status": "pending",
+              "context": {
+                "read_before": [],
+                "related_files": ["index.md"]
+              },
+              "depends_on": ["4.3.1"],
+              "actions": [
+                {
+                  "id": "4.4.1.1",
+                  "command": "RUN npm run build:slides",
+                  "file": null,
+                  "status": "pending"
+                },
+                {
+                  "id": "4.4.1.2",
+                  "command": "RUN npm run dev and verify slides 08-10 render correctly",
+                  "file": null,
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 5,
@@ -173,7 +1274,182 @@
           "Check full narrative arc is complete"
         ]
       },
-      "task_groups": []
+      "task_groups": [
+        {
+          "id": "5.1",
+          "title": "Create Vision Slide",
+          "objective": "Step out of loop, 10x myth pushback",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "5.1.1",
+              "title": "Create the vision slide",
+              "file_path": "slides/11-the-vision.md",
+              "description": "Create slide about the compound gains vision: What we're doing with skills = encoding your engineering knowledge, First agent does flows you already do efficiently, Then trust builds -> queue as background task -> just review, Goal: step farther and farther out of the loop. Include 10x myth pushback: Reality is 10% faster here, 5% faster there, compounds over MONTHS.",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md",
+                    "lines": "238-249",
+                    "purpose": "Get vision content from spec"
+                  }
+                ],
+                "related_files": []
+              },
+              "depends_on": [],
+              "actions": [
+                {
+                  "id": "5.1.1.1",
+                  "command": "CREATE FILE slides/11-the-vision.md with frontmatter",
+                  "file": "slides/11-the-vision.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "5.1.1.2",
+                  "command": "ADD headline: 'The Vision' or 'Where We're Headed'",
+                  "file": "slides/11-the-vision.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "5.1.1.3",
+                  "command": "ADD progression: Skills = encoding knowledge -> agent does your flows -> trust builds -> background tasks -> just review",
+                  "file": "slides/11-the-vision.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "5.1.1.4",
+                  "command": "ADD 10x myth pushback: NOT instant transformation, Reality: 10% here, 5% there, compounds over MONTHS",
+                  "file": "slides/11-the-vision.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "5.1.1.5",
+                  "command": "ADD key message: No magic pill - AI does NOT replace knowledge, you're building TOWARDS that future",
+                  "file": "slides/11-the-vision.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "5.1.1.6",
+                  "command": "ADD speaker notes about realistic expectations",
+                  "file": "slides/11-the-vision.md",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "title": "Create Key Takeaways Slide",
+          "objective": "ROI math ($10K → $40K), mentality shift",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "5.2.1",
+              "title": "Create key takeaways slide",
+              "file_path": "slides/12-key-takeaways.md",
+              "description": "Create slide with key takeaways: Don't let bad examples blind you, For skilled engineers AI is huge force multiplier, THE MATH: $1K/month tokens x 10 engineers = $10K, average engineer costs $10K, 40% more effective = $40K value, spend $10K to get $40K = 4x ROI. The mentality: What can we systematize into skills?",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md",
+                    "lines": "267-280",
+                    "purpose": "Get key takeaways content from spec"
+                  }
+                ],
+                "related_files": []
+              },
+              "depends_on": ["5.1.1"],
+              "actions": [
+                {
+                  "id": "5.2.1.1",
+                  "command": "CREATE FILE slides/12-key-takeaways.md with frontmatter",
+                  "file": "slides/12-key-takeaways.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "5.2.1.2",
+                  "command": "ADD headline: 'Key Takeaways'",
+                  "file": "slides/12-key-takeaways.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "5.2.1.3",
+                  "command": "ADD takeaway 1: Don't let bad examples blind you - this is coming",
+                  "file": "slides/12-key-takeaways.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "5.2.1.4",
+                  "command": "ADD takeaway 2: For skilled engineers, AI is a HUGE force multiplier",
+                  "file": "slides/12-key-takeaways.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "5.2.1.5",
+                  "command": "ADD ROI math: $1K tokens x 10 engineers = $10K spend, 40% more effective = $40K value, 4x ROI",
+                  "file": "slides/12-key-takeaways.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "5.2.1.6",
+                  "command": "ADD mentality shift: What can we systematize into skills? Transfer best practices to whole team",
+                  "file": "slides/12-key-takeaways.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "5.2.1.7",
+                  "command": "ADD closing: Skills = encoding knowledge -> compound gains over time",
+                  "file": "slides/12-key-takeaways.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "5.2.1.8",
+                  "command": "ADD speaker notes with emphasis on the math being a no-brainer",
+                  "file": "slides/12-key-takeaways.md",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "title": "Build & Verify",
+          "objective": "Run build:slides and verify full narrative",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "5.3.1",
+              "title": "Build and verify CP5 slides",
+              "file_path": null,
+              "description": "Run build:slides and verify the full narrative arc is complete.",
+              "status": "pending",
+              "context": {
+                "read_before": [],
+                "related_files": ["index.md"]
+              },
+              "depends_on": ["5.2.1"],
+              "actions": [
+                {
+                  "id": "5.3.1.1",
+                  "command": "RUN npm run build:slides",
+                  "file": null,
+                  "status": "pending"
+                },
+                {
+                  "id": "5.3.1.2",
+                  "command": "RUN npm run dev and verify complete narrative flow",
+                  "file": null,
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 6,
@@ -207,7 +1483,197 @@
           "Verify ~15 min of content"
         ]
       },
-      "task_groups": []
+      "task_groups": [
+        {
+          "id": "6.1",
+          "title": "Update Conclusion Slide",
+          "objective": "Verify Let's Connect QR codes work",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "6.1.1",
+              "title": "Verify and update conclusion slide",
+              "file_path": "slides/99-conclusion.md",
+              "description": "Verify the Let's Connect slide has correct QR codes for X, LinkedIn, and Website. Update the closing message to match the presentation theme. Ensure 'Questions?' prompt is present.",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "slides/99-conclusion.md",
+                    "lines": "all",
+                    "purpose": "Review current conclusion slide content"
+                  },
+                  {
+                    "file": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md",
+                    "lines": "281-284",
+                    "purpose": "Get conclusion section from spec"
+                  }
+                ],
+                "related_files": []
+              },
+              "depends_on": [],
+              "actions": [
+                {
+                  "id": "6.1.1.1",
+                  "command": "VERIFY QR codes for X, LinkedIn, Website are correct and working",
+                  "file": "slides/99-conclusion.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "6.1.1.2",
+                  "command": "UPDATE closing message to match presentation theme if needed",
+                  "file": "slides/99-conclusion.md",
+                  "status": "pending"
+                },
+                {
+                  "id": "6.1.1.3",
+                  "command": "UPDATE speaker notes with closing remarks",
+                  "file": "slides/99-conclusion.md",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6.2",
+          "title": "Add Missing Assets",
+          "objective": "skill-issue.jpg, cortex-stats.png, skill-tree.png",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "6.2.1",
+              "title": "Create/add missing image assets",
+              "file_path": "public/",
+              "description": "Ensure all required image assets are in place: skill-issue.jpg (bell curve meme), cortex-stats.png (optional - Cortex report screenshot), skill-tree.png (Ford's skill directory screenshot). Create placeholders or source actual images.",
+              "status": "pending",
+              "context": {
+                "read_before": [],
+                "related_files": ["slides/02-the-meme.md", "slides/09-example-skill.md"]
+              },
+              "depends_on": ["6.1.1"],
+              "actions": [
+                {
+                  "id": "6.2.1.1",
+                  "command": "CHECK if public/skill-issue.jpg exists, CREATE placeholder if not",
+                  "file": "public/skill-issue.jpg",
+                  "status": "pending"
+                },
+                {
+                  "id": "6.2.1.2",
+                  "command": "CHECK if public/skill-tree.png exists, CREATE placeholder if not",
+                  "file": "public/skill-tree.png",
+                  "status": "pending"
+                },
+                {
+                  "id": "6.2.1.3",
+                  "command": "VERIFY all image references in slides point to correct paths",
+                  "file": null,
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6.3",
+          "title": "Speaker Notes Pass",
+          "objective": "Ensure all slides have helpful speaker notes",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "6.3.1",
+              "title": "Review and complete speaker notes",
+              "file_path": "slides/",
+              "description": "Review all slides and ensure each has helpful speaker notes. Notes should include: key talking points, timing hints, transition cues.",
+              "status": "pending",
+              "context": {
+                "read_before": [
+                  {
+                    "file": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md",
+                    "lines": "153-156",
+                    "purpose": "Get time constraints (15 min content, 20 min total)"
+                  }
+                ],
+                "related_files": []
+              },
+              "depends_on": ["6.2.1"],
+              "actions": [
+                {
+                  "id": "6.3.1.1",
+                  "command": "REVIEW all slides for speaker notes completeness",
+                  "file": "slides/",
+                  "status": "pending"
+                },
+                {
+                  "id": "6.3.1.2",
+                  "command": "ADD timing hints: ~15 min content, skills section 5-7 min",
+                  "file": "slides/",
+                  "status": "pending"
+                },
+                {
+                  "id": "6.3.1.3",
+                  "command": "ADD transition cues between sections",
+                  "file": "slides/",
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6.4",
+          "title": "Final Build & Run-through",
+          "objective": "Full presentation verification",
+          "status": "pending",
+          "tasks": [
+            {
+              "id": "6.4.1",
+              "title": "Final build and full run-through",
+              "file_path": null,
+              "description": "Final build of slides, complete run-through of presentation, verify all images load, check timing is ~15 min, ensure narrative flow is complete.",
+              "status": "pending",
+              "context": {
+                "read_before": [],
+                "related_files": ["index.md"]
+              },
+              "depends_on": ["6.3.1"],
+              "actions": [
+                {
+                  "id": "6.4.1.1",
+                  "command": "RUN npm run build:slides for final index.md generation",
+                  "file": null,
+                  "status": "pending"
+                },
+                {
+                  "id": "6.4.1.2",
+                  "command": "RUN npm run dev for final presentation preview",
+                  "file": null,
+                  "status": "pending"
+                },
+                {
+                  "id": "6.4.1.3",
+                  "command": "VERIFY all images load correctly",
+                  "file": null,
+                  "status": "pending"
+                },
+                {
+                  "id": "6.4.1.4",
+                  "command": "VERIFY slide count and estimate ~15 min of content",
+                  "file": null,
+                  "status": "pending"
+                },
+                {
+                  "id": "6.4.1.5",
+                  "command": "VERIFY complete narrative arc: Title -> Problem -> Hook -> Question -> Mental Model -> Skills Concept -> How Skills Work -> Example -> Occam's Razor -> Vision -> Takeaways -> Conclusion",
+                  "file": null,
+                  "status": "pending"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
