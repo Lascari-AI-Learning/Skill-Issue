@@ -1,0 +1,3 @@
+{"operation": "read", "file_path": "/tmp/claude/-Users-Ford-Github-Repos-presentations-Skill-Issue/tasks/b3c0a36.output"}
+{"operation": "read", "file_path": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/state.json"}
+{"operation": "write", "file_path": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/dev-notes.json", "tool_input": {"content_length": 678}}

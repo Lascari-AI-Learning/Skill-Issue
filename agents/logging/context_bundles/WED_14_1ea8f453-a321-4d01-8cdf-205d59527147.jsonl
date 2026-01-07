@@ -1,0 +1,22 @@
+{"operation": "prompt", "prompt": "/agent-session:build-background 2025-01-07_agent-skills-presentation_k8m3x9"}
+{"operation": "read", "file_path": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/dev-notes.json"}
+{"operation": "read", "file_path": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/state.json"}
+{"operation": "read", "file_path": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/plan.json"}
+{"operation": "read", "file_path": "slides/99-conclusion.md"}
+{"operation": "read", "file_path": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md", "tool_input": {"limit": 20, "offset": 281}}
+{"operation": "read", "file_path": "slides/09-example-skill.md"}
+{"operation": "read", "file_path": "slides/02-the-meme.md"}
+{"operation": "read", "file_path": "slides/01-the-problem.md"}
+{"operation": "read", "file_path": "slides/00-title.md"}
+{"operation": "read", "file_path": "slides/03-about-me.md"}
+{"operation": "read", "file_path": "slides/05-the-question.md"}
+{"operation": "read", "file_path": "slides/06-mental-model.md"}
+{"operation": "read", "file_path": "slides/04-the-hook.md"}
+{"operation": "read", "file_path": "slides/08-how-skills-work.md"}
+{"operation": "read", "file_path": "slides/12-key-takeaways.md"}
+{"operation": "read", "file_path": "slides/11-the-vision.md"}
+{"operation": "read", "file_path": "slides/07-what-is-a-skill.md"}
+{"operation": "read", "file_path": "slides/10-occams-razor.md"}
+{"operation": "read", "file_path": "index.md", "tool_input": {"limit": 100}}
+{"operation": "read", "file_path": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/state.json"}
+{"operation": "read", "file_path": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/dev-notes.json"}

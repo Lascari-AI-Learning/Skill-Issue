@@ -1,0 +1,2 @@
+{"operation": "prompt", "prompt": "adjust the local settings to allow all browser mcp commadns"}
+{"operation": "read", "file_path": ".claude/settings.local.json"}

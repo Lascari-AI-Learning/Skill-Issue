@@ -13,6 +13,41 @@
       "category": "decision",
       "content": "Reorganized slides to separate the about-me bio from the hook numbers. This creates better pacing - intro yourself briefly, THEN hit them with the dramatic numbers reveal.",
       "timestamp": "2025-01-07T21:59:00Z"
+    },
+    {
+      "checkpoint": 3,
+      "scope": { "type": "checkpoint", "ref": "3" },
+      "category": "decision",
+      "content": "Removed the standalone 'solution' slide (05-the-solution.md) as its content is now distributed across the mental model and skills concept slides. The narrative flows better with Question -> Mental Model -> What is a Skill without a separate 'answer' slide.",
+      "timestamp": "2025-01-07T20:05:00Z"
+    },
+    {
+      "checkpoint": 3,
+      "scope": { "type": "checkpoint", "ref": "3" },
+      "category": "discovery",
+      "content": "Added placeholder for skill-issue.jpg in meme slide to prevent build errors. The image asset is still pending for CP6.",
+      "timestamp": "2025-01-07T20:05:00Z"
+    },
+    {
+      "checkpoint": 4,
+      "scope": { "type": "checkpoint", "ref": "4" },
+      "category": "decision",
+      "content": "Skills deep dive uses a 3-slide approach: (1) How skills work - the flow and file structure, (2) Example skill - Ford's practical setup, (3) Occam's Razor - the right approach to building skills. This keeps the technical content digestible within the 5-7 min allocation.",
+      "timestamp": "2025-01-07T22:15:00Z"
+    },
+    {
+      "checkpoint": 5,
+      "scope": { "type": "checkpoint", "ref": "5" },
+      "category": "decision",
+      "content": "Vision slide balances optimism with reality check - the 10x myth pushback ensures audience has realistic expectations. Key takeaways slide includes concrete ROI math (4x return) to give decision-makers a business case.",
+      "timestamp": "2025-01-07T22:45:00Z"
+    },
+    {
+      "checkpoint": 6,
+      "scope": { "type": "session", "ref": null },
+      "category": "resolution",
+      "content": "Build complete! Final presentation: 14 slides, 1032 words, 57 v-clicks. Meme slide uses styled placeholder instead of external image (works well). All speaker notes include timing hints. Complete narrative arc verified: Title → Problem → Hook → Question → Mental Model → Skills Concept → How Skills Work → Example → Occam's Razor → Vision → Takeaways → Conclusion.",
+      "timestamp": "2025-01-07T23:30:00Z"
     }
   ]
 }
