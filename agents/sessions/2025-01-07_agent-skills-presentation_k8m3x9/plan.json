@@ -1,0 +1,213 @@
+{
+  "$schema": "Plan schema for agent-session checkpoint-based planning (v2)",
+
+  "session_id": "2025-01-07_agent-skills-presentation_k8m3x9",
+  "spec_reference": "./spec.md",
+  "created_at": "2025-01-07T14:00:00Z",
+  "updated_at": "2025-01-07T14:00:00Z",
+  "status": "draft",
+
+  "checkpoints": [
+    {
+      "id": 1,
+      "title": "Core Narrative Flow",
+      "goal": "Create the essential story arc: Title → Problem → Hook → Solution intro. Produces a minimal but complete narrative that could be delivered as a 5-min pitch.",
+      "prerequisites": [],
+      "status": "pending",
+      "file_context": {
+        "beginning": {
+          "files": [
+            { "path": "slides/00-title.md", "status": "exists", "description": "Old title slide (What is Claude Code?)" },
+            { "path": "slides/01-what-well-cover.md", "status": "exists", "description": "Old agenda slide" },
+            { "path": "slides/02-about-me.md", "status": "exists", "description": "About me slide (partially relevant)" },
+            { "path": "slides/03-conclusion.md", "status": "exists", "description": "Let's Connect slide" }
+          ],
+          "tree": "slides/\n├── 00-title.md\n├── 01-what-well-cover.md\n├── 02-about-me.md\n└── 03-conclusion.md"
+        },
+        "ending": {
+          "files": [
+            { "path": "slides/00-title.md", "status": "modified", "description": "Updated title: The Skill Issue" },
+            { "path": "slides/01-problem-overview.md", "status": "new", "description": "Problem slide with placeholder stats" },
+            { "path": "slides/02-about-me.md", "status": "modified", "description": "Updated with hook structure" },
+            { "path": "slides/03-the-solution.md", "status": "new", "description": "Transition slide introducing skills" },
+            { "path": "slides/99-conclusion.md", "status": "renamed", "description": "Renamed from 03 for ordering" }
+          ],
+          "tree": "slides/\n├── 00-title.md (modified)\n├── 01-problem-overview.md (new)\n├── 02-about-me.md (modified)\n├── 03-the-solution.md (new)\n└── 99-conclusion.md (renamed)"
+        }
+      },
+      "testing_strategy": {
+        "approach": "Visual verification via dev server",
+        "verification_steps": [
+          "npm run build:slides",
+          "npm run dev",
+          "Verify slides render correctly at localhost:3030",
+          "Check narrative flow makes sense as a mini-presentation"
+        ]
+      },
+      "task_groups": []
+    },
+    {
+      "id": 2,
+      "title": "Problem & Credibility Deep Dive",
+      "goal": "Flesh out the problem section with Cortex 2026 report data and Ford's credibility hook with real numbers. Complete the 'why should you care' section.",
+      "prerequisites": [1],
+      "status": "pending",
+      "file_context": {
+        "beginning": {
+          "files": [
+            { "path": "slides/01-problem-overview.md", "status": "exists", "description": "Problem placeholder from CP1" },
+            { "path": "slides/02-about-me.md", "status": "exists", "description": "About me with hook structure" }
+          ],
+          "tree": "slides/\n├── 00-title.md\n├── 01-problem-overview.md\n├── 02-about-me.md\n├── 03-the-solution.md\n└── 99-conclusion.md"
+        },
+        "ending": {
+          "files": [
+            { "path": "slides/01-the-problem.md", "status": "modified", "description": "Cortex data: 90% adoption, stats" },
+            { "path": "slides/02-the-meme.md", "status": "new", "description": "Bell curve meme slide" },
+            { "path": "slides/03-about-me.md", "status": "renamed", "description": "Renumbered about-me" },
+            { "path": "slides/04-the-hook.md", "status": "new", "description": "Ford's numbers with v-clicks" }
+          ],
+          "tree": "slides/\n├── 00-title.md\n├── 01-the-problem.md\n├── 02-the-meme.md\n├── 03-about-me.md\n├── 04-the-hook.md\n├── 05-the-solution.md\n└── 99-conclusion.md"
+        }
+      },
+      "testing_strategy": {
+        "approach": "Visual verification + narrative flow check",
+        "verification_steps": [
+          "npm run build:slides && npm run dev",
+          "Verify Cortex stats display correctly",
+          "Verify v-clicks work on hook slide",
+          "Check problem → hook → solution flow is compelling"
+        ]
+      },
+      "task_groups": []
+    },
+    {
+      "id": 3,
+      "title": "Mental Model & Skills Concept",
+      "goal": "Explain the junior engineer analogy and introduce skills as the solution. Audience understands WHY skills matter.",
+      "prerequisites": [2],
+      "status": "pending",
+      "file_context": {
+        "beginning": {
+          "files": [
+            { "path": "slides/05-the-solution.md", "status": "exists", "description": "Basic solution intro" }
+          ],
+          "tree": "From CP2 ending state"
+        },
+        "ending": {
+          "files": [
+            { "path": "slides/05-the-question.md", "status": "new", "description": "What are we doing in 2026?" },
+            { "path": "slides/06-mental-model.md", "status": "new", "description": "Junior engineer analogy" },
+            { "path": "slides/07-what-is-a-skill.md", "status": "new", "description": "Skills definition slide" }
+          ],
+          "tree": "slides/\n├── 00-title.md\n├── 01-the-problem.md\n├── 02-the-meme.md\n├── 03-about-me.md\n├── 04-the-hook.md\n├── 05-the-question.md\n├── 06-mental-model.md\n├── 07-what-is-a-skill.md\n└── 99-conclusion.md"
+        }
+      },
+      "testing_strategy": {
+        "approach": "Visual verification + concept clarity check",
+        "verification_steps": [
+          "npm run build:slides && npm run dev",
+          "Verify mental model slide clearly explains the analogy",
+          "Check skills concept is introduced clearly"
+        ]
+      },
+      "task_groups": []
+    },
+    {
+      "id": 4,
+      "title": "Skills Deep Dive & Example",
+      "goal": "Show how skills work technically and walk through a specific example. Audience knows HOW skills work.",
+      "prerequisites": [3],
+      "status": "pending",
+      "file_context": {
+        "beginning": {
+          "files": [
+            { "path": "slides/07-what-is-a-skill.md", "status": "exists", "description": "Skills definition" }
+          ],
+          "tree": "From CP3 ending state"
+        },
+        "ending": {
+          "files": [
+            { "path": "slides/08-how-skills-work.md", "status": "new", "description": "Technical structure, progressive disclosure" },
+            { "path": "slides/09-example-skill.md", "status": "new", "description": "Ford's file tree + specific example" },
+            { "path": "slides/10-occams-razor.md", "status": "new", "description": "How to build skills (iterate first)" },
+            { "path": "public/skill-tree.png", "status": "new", "description": "Screenshot of Ford's skill directory" }
+          ],
+          "tree": "slides/\n├── 00-title.md\n├── 01-the-problem.md\n├── 02-the-meme.md\n├── 03-about-me.md\n├── 04-the-hook.md\n├── 05-the-question.md\n├── 06-mental-model.md\n├── 07-what-is-a-skill.md\n├── 08-how-skills-work.md\n├── 09-example-skill.md\n├── 10-occams-razor.md\n└── 99-conclusion.md"
+        }
+      },
+      "testing_strategy": {
+        "approach": "Visual verification + technical accuracy check",
+        "verification_steps": [
+          "npm run build:slides && npm run dev",
+          "Verify technical diagrams/images render",
+          "Check example skill walkthrough is clear (5-7 min content)"
+        ]
+      },
+      "task_groups": []
+    },
+    {
+      "id": 5,
+      "title": "Vision & Takeaways",
+      "goal": "Complete the message with the compound gains vision, realistic expectations (10x myth pushback), key takeaways, and ROI math.",
+      "prerequisites": [4],
+      "status": "pending",
+      "file_context": {
+        "beginning": {
+          "files": [],
+          "tree": "From CP4 ending state"
+        },
+        "ending": {
+          "files": [
+            { "path": "slides/11-the-vision.md", "status": "new", "description": "Step out of the loop, 10x myth pushback" },
+            { "path": "slides/12-key-takeaways.md", "status": "new", "description": "ROI math, mentality shift" }
+          ],
+          "tree": "slides/\n├── 00-title.md\n├── 01-the-problem.md\n├── 02-the-meme.md\n├── 03-about-me.md\n├── 04-the-hook.md\n├── 05-the-question.md\n├── 06-mental-model.md\n├── 07-what-is-a-skill.md\n├── 08-how-skills-work.md\n├── 09-example-skill.md\n├── 10-occams-razor.md\n├── 11-the-vision.md\n├── 12-key-takeaways.md\n└── 99-conclusion.md"
+        }
+      },
+      "testing_strategy": {
+        "approach": "Visual verification + message completeness check",
+        "verification_steps": [
+          "npm run build:slides && npm run dev",
+          "Verify ROI math is clear and compelling",
+          "Check full narrative arc is complete"
+        ]
+      },
+      "task_groups": []
+    },
+    {
+      "id": 6,
+      "title": "Polish & Assets",
+      "goal": "Final polish: update conclusion slide, ensure all images/screenshots are in place, add speaker notes, styling consistency pass.",
+      "prerequisites": [5],
+      "status": "pending",
+      "file_context": {
+        "beginning": {
+          "files": [
+            { "path": "slides/99-conclusion.md", "status": "exists", "description": "Let's Connect slide" }
+          ],
+          "tree": "From CP5 ending state"
+        },
+        "ending": {
+          "files": [
+            { "path": "slides/99-conclusion.md", "status": "modified", "description": "Updated closing slide" },
+            { "path": "public/skill-issue.jpg", "status": "new", "description": "Bell curve meme image" },
+            { "path": "public/cortex-stats.png", "status": "new", "description": "Cortex report screenshot" }
+          ],
+          "tree": "slides/\n├── 00-title.md\n├── 01-the-problem.md\n├── 02-the-meme.md\n├── 03-about-me.md\n├── 04-the-hook.md\n├── 05-the-question.md\n├── 06-mental-model.md\n├── 07-what-is-a-skill.md\n├── 08-how-skills-work.md\n├── 09-example-skill.md\n├── 10-occams-razor.md\n├── 11-the-vision.md\n├── 12-key-takeaways.md\n└── 99-conclusion.md (final)"
+        }
+      },
+      "testing_strategy": {
+        "approach": "Full presentation run-through",
+        "verification_steps": [
+          "npm run build:slides && npm run dev",
+          "Run through entire presentation",
+          "Verify all images load",
+          "Check speaker notes are helpful",
+          "Verify ~15 min of content"
+        ]
+      },
+      "task_groups": []
+    }
+  ]
+}

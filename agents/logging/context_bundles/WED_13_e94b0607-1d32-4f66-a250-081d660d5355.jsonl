@@ -1,0 +1,2 @@
+{"operation": "prompt", "prompt": "adjust the deploy yaml to do master or main for deploy"}
+{"operation": "read", "file_path": ".github/workflows/deploy.yml"}

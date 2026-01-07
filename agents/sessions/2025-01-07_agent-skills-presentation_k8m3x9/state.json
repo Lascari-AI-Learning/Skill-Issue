@@ -15,10 +15,11 @@
     }
   },
   "plan_state": {
-    "status": "outline_pending",
-    "checkpoints_total": 0,
+    "status": "outline_approved",
+    "checkpoints_total": 6,
     "checkpoints_detailed": 0,
-    "last_updated": "2025-01-07T14:00:00Z"
+    "current_checkpoint": 1,
+    "last_updated": "2025-01-07T14:15:00Z"
   },
   "prior_session": null,
   "granularity": "project",
