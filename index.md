@@ -19,7 +19,15 @@ src: ./slides/04-the-hook.md
 ---
 
 ---
-src: ./slides/05-the-solution.md
+src: ./slides/05-the-question.md
+---
+
+---
+src: ./slides/06-mental-model.md
+---
+
+---
+src: ./slides/07-what-is-a-skill.md
 ---
 
 ---
