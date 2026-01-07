@@ -31,5 +31,17 @@ src: ./slides/07-what-is-a-skill.md
 ---
 
 ---
+src: ./slides/08-how-skills-work.md
+---
+
+---
+src: ./slides/09-example-skill.md
+---
+
+---
+src: ./slides/10-occams-razor.md
+---
+
+---
 src: ./slides/99-conclusion.md
 ---
