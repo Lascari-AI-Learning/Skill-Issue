@@ -32,10 +32,23 @@ layout: default
 </div>
 </v-click>
 
+<v-click>
+<div class="mt-6 p-4 bg-slate-800/50 rounded-lg border-l-4 border-orange-400">
+<div class="text-lg font-semibold mb-2">I've seen this firsthand:</div>
+<div class="text-sm text-gray-300 space-y-1">
+  <div>Recent client project - UI engineer using Cursor without understanding</div>
+  <div>5000+ line files, hardcoded strings, 20 components per file</div>
+  <div class="italic text-gray-400 mt-2">Not his fault - he didn't know what he was doing</div>
+</div>
+</div>
+</v-click>
+
 </div>
 
 <!--
 This data is from the Cortex 2026 State of Engineering report. 90% of developers are now using AI tools - but look at what's happening to quality metrics. More code is shipping, but incidents are up, failure rates are up. The pattern is clear: AI amplifies whatever you already have. Good practices become great. Bad practices become catastrophic.
+
+Personal anecdote: I had to refactor thousands of lines from this client. The engineer wasn't bad - he just didn't have the experience to guide the AI properly. This is the skill issue - not the AI's fault, not the engineer's fault necessarily, but a gap in knowing HOW to work with AI effectively.
 -->
 
 <style>

@@ -1,0 +1,18 @@
+{
+  "notes": [
+    {
+      "checkpoint": 2,
+      "scope": { "type": "checkpoint", "ref": "2" },
+      "category": "discovery",
+      "content": "Missing asset: /skill-issue.jpg needed for bell curve meme slide (02-the-meme.md). Will be added in CP6 (Polish & Assets).",
+      "timestamp": "2025-01-07T21:59:00Z"
+    },
+    {
+      "checkpoint": 2,
+      "scope": { "type": "checkpoint", "ref": "2" },
+      "category": "decision",
+      "content": "Reorganized slides to separate the about-me bio from the hook numbers. This creates better pacing - intro yourself briefly, THEN hit them with the dramatic numbers reveal.",
+      "timestamp": "2025-01-07T21:59:00Z"
+    }
+  ]
+}
