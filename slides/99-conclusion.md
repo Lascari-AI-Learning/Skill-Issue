@@ -47,11 +47,28 @@ theme: ../
   </div>
 </div>
 
-<div class="text-2xl text-center mt-12 text-gray-900">Questions? Want to discuss your AI engineering challenges?</div>
+<div class="text-2xl text-center mt-12 text-gray-900">Questions? Let's talk about building skills for your team.</div>
 
 
 <!--
-Thank you for joining me today. I hope this gave you a practical understanding of Claude Code and how it can enhance your engineering workflow without compromising your craft. Let's continue the conversation - reach out with your questions, challenges, or success stories.
+SPEAKER NOTES:
+
+Closing thoughts:
+- Remember: Skills = encoding your engineering knowledge for compound gains over time
+- Start small - work IN the loop first, then systematize what works
+- The math is a no-brainer: $10K → $40K value (4x ROI)
+
+Questions prompt:
+- What processes does your team repeat that could become skills?
+- What's blocking you from getting more value from AI coding tools?
+- Want help setting up skills for your specific workflow?
+
+Connect:
+- X/Twitter for daily AI engineering insights
+- LinkedIn for professional collaboration
+- Website for consulting and deeper engagements
+
+Thank them for their time and attention!
 -->
 
 <style>

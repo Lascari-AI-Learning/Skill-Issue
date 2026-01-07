@@ -42,5 +42,9 @@ layout: default
 </div>
 
 <!--
+SPEAKER NOTES (Skills Section Start - ~5 min mark, 5-7 min for this section):
+
 So what IS a skill? It's an opinionated way of formatting Markdown files that allows AI agents to self-discover processes. Think of it like documentation that the AI can actually use. Anthropic recently released this as a standard structure in Claude Code, and it's becoming the de facto way to encode engineering knowledge for AI. The good news? It's not complicated to set up - if you've ever written documentation for a new hire, you've already done 80% of the work.
+
+NOTE: Keep skills section light touch - 5-7 minutes total for slides 07-10.
 -->

@@ -5,10 +5,11 @@ layout: center
 
 <div class="text-center">
 
-<!-- TODO: Replace with local /skill-issue.jpg in CP6 -->
-<div class="mx-auto max-h-80 rounded-lg shadow-xl bg-ash-graphite p-8 text-center">
-  <div class="text-2xl font-bold text-gray-400 mb-4">[Bell Curve Meme Placeholder]</div>
-  <div class="text-gray-500">Image: skill-issue.jpg to be added</div>
+<!-- NOTE: Add /skill-issue.jpg for actual bell curve meme image -->
+<!-- For now, using styled placeholder that conveys the same message -->
+<div class="mx-auto rounded-lg shadow-xl bg-gradient-to-r from-green-900/30 via-red-900/30 to-blue-900/30 p-6">
+  <div class="text-3xl font-bold text-gray-200 mb-2">The Skill Issue</div>
+  <div class="text-lg text-gray-400 italic">a.k.a. "The Bell Curve Meme"</div>
 </div>
 
 <div class="grid grid-cols-3 gap-8 mt-8 text-sm">

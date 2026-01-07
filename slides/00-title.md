@@ -13,7 +13,11 @@ Agents Decoded in 2026
 
 
 <!--
+SPEAKER NOTES (Opening - 1 minute):
+
 Let's cut through the hype. You've seen the AI coding demos on Twitter - vibe coding, agents building entire apps, 10x productivity claims. But what's the reality? Today we're going to talk about real value versus demo magic, and why the gap between success and failure comes down to one thing: skills.
+
+TIMING: This presentation is ~15 minutes of content, with 5 minutes for Q&A.
 -->
 
 <style>

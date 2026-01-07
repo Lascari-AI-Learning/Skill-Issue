@@ -58,9 +58,13 @@ layout: default
 </div>
 
 <!--
+SPEAKER NOTES (Closing Section - ~12 min mark):
+
 This is the vision we're working toward. With skills, you're encoding your engineering knowledge so the agent can do the flows you already do efficiently. As trust builds, you start queuing tasks as background work and just review the output. The goal is stepping farther and farther out of the loop.
 
 But let me be real - this isn't instant 10x transformation. That's a myth. The reality is 10% faster here, 5% faster there, and these compound over MONTHS. There's no magic pill. AI does NOT replace the knowledge you need to have. You're building toward that future, not arriving at it overnight.
 
 Don't just hand everything off and expect miracles - but DO build systematically toward more autonomy over time.
+
+TIMING: Approaching final 3 minutes of content before Q&A.
 -->
