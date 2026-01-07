@@ -2,13 +2,23 @@
   "session_id": "2025-01-07_agent-skills-presentation_k8m3x9",
   "topic": "Agent Skills Presentation Brainstorm",
   "description": "Brainstorming session for a presentation about Claude Code agent skills being given tomorrow",
-  "current_phase": "spec",
+  "current_phase": "plan",
   "phases": {
     "spec": {
       "status": "finalized",
       "started_at": "2025-01-07T09:30:00Z",
       "finalized_at": "2025-01-07T11:00:00Z"
+    },
+    "plan": {
+      "status": "in_progress",
+      "started_at": "2025-01-07T14:00:00Z"
     }
+  },
+  "plan_state": {
+    "status": "outline_pending",
+    "checkpoints_total": 0,
+    "checkpoints_detailed": 0,
+    "last_updated": "2025-01-07T14:00:00Z"
   },
   "prior_session": null,
   "granularity": "project",
