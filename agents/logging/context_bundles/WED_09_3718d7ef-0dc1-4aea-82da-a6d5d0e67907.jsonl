@@ -1,0 +1,10 @@
+{"operation": "prompt", "prompt": "Please go through all of the slides I currently have as this was a template, and remove anything that is not an intro slide or conclusion if this makes sense."}
+{"operation": "read", "file_path": "slides/00-title.md"}
+{"operation": "read", "file_path": "slides/02-about-me.md"}
+{"operation": "read", "file_path": "slides/01-what-well-cover.md"}
+{"operation": "read", "file_path": "slides/04-agentic-vs-controllable.md"}
+{"operation": "read", "file_path": "slides/09-what-this-means.md"}
+{"operation": "read", "file_path": "slides/06-closing-the-gap.md"}
+{"operation": "read", "file_path": "slides/11-conclusion.md"}
+{"operation": "read", "file_path": "slides/07-modular-approach-continuum.md"}
+{"operation": "read", "file_path": "slides/03-modern-dilemma.md"}

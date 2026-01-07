@@ -1,0 +1,4 @@
+{"operation": "prompt", "prompt": "/agent-session:plan 2025-01-07_agent-skills-presentation_k8m3x9"}
+{"operation": "read", "file_path": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/spec.md"}
+{"operation": "read", "file_path": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/state.json"}
+{"operation": "read", "file_path": ".claude/skills/agent-session/plan/OVERVIEW.md"}

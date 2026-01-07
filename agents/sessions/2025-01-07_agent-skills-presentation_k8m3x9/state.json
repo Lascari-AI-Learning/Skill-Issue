@@ -1,0 +1,54 @@
+{
+  "session_id": "2025-01-07_agent-skills-presentation_k8m3x9",
+  "topic": "Agent Skills Presentation Brainstorm",
+  "description": "Brainstorming session for a presentation about Claude Code agent skills being given tomorrow",
+  "current_phase": "spec",
+  "phases": {
+    "spec": {
+      "status": "finalized",
+      "started_at": "2025-01-07T09:30:00Z",
+      "finalized_at": "2025-01-07T11:00:00Z"
+    }
+  },
+  "prior_session": null,
+  "granularity": "project",
+  "open_questions": [
+    "What specific example skill to walk through?",
+    "What are Ford's actual numbers for the opening? (diff changes, token spend, revenue)",
+    "How technical should the skill walkthrough be?",
+    "What's the 'one thing' the audience should remember/do after leaving?"
+  ],
+  "key_decisions": [
+    {
+      "decision": "Start with personal stats",
+      "rationale": "Credibility through transparency, not bragging - shows 'this is what real value looks like'",
+      "date": "2025-01-07"
+    },
+    {
+      "decision": "Use Cortex 2026 report data",
+      "rationale": "Third-party validation of the 'more code, more bugs' problem",
+      "date": "2025-01-07"
+    },
+    {
+      "decision": "Frame agent as 'junior engineer you're leveling up'",
+      "rationale": "Relatable mental model - audience knows you don't hand complex tasks to new juniors",
+      "date": "2025-01-07"
+    },
+    {
+      "decision": "Include the recipe (Modularity, DDD, explicit specs, docs)",
+      "rationale": "Bridges problem to solution - without these, agent guesses and makes a mess",
+      "date": "2025-01-07"
+    }
+  ],
+  "goals": {
+    "high_level": ["Audience understands AI amplifies whatever you have - skills encode quality"],
+    "mid_level": [
+      "Establish credibility through transparency (Ford's real numbers)",
+      "Ground discussion in industry data (Cortex report)",
+      "Introduce skills as concrete solution",
+      "Walk through practical example skill"
+    ],
+    "detailed": []
+  },
+  "updated_at": "2025-01-07T10:00:00Z"
+}
