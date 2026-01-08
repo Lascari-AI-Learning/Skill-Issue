@@ -1,0 +1,6 @@
+{"operation": "prompt", "prompt": "can we adjust the what is a skill slide to use the intro what well cover template\\\n\\\nwith 3 columns\\\n\\\nAnd in this it'd be like it's opinionated Markdown files. You structure in a way that is works for self-discovery and it is you know recently released by Anthropik, but like many of the various AI coding providers have now adopted it as kind of just the way to structure this type of age AI code or like Agentic documentation."}
+{"operation": "read", "file_path": "slide-templates/intro-what-well-cover/slide.md"}
+{"operation": "read", "file_path": "slides/07-what-is-a-skill.md"}
+{"operation": "write", "file_path": "slides/07-what-is-a-skill.md", "tool_input": {"content_length": 3714}}
+{"operation": "prompt", "prompt": "One can we mention that is like you know in the self-discovery that is used through a term called progressive disclosure. It's instead of becoming the standard, it's the new standard."}
+{"operation": "prompt", "prompt": "I'd like to make this so each only has two bullets:\n1. Just structured documentation files and the second bullet is like, you know, both human and agent readable.\n2. Agents find processes or agents acquire context on demand, no manual loading required.\n3. Released by Anthropic, adopted across AI coding tools."}

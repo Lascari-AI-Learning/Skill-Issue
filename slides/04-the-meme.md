@@ -8,8 +8,10 @@ layout: center
 <img src="/skill-issue.jpg" class="mx-auto rounded-lg shadow-xl max-h-96" alt="The Skill Issue Bell Curve Meme" />
 
 <v-click>
-<div class="mt-8 text-xl font-semibold text-gray-200">
-But don't let bad examples blind you to the opportunity
+<div class="mt-8 bg-white border-purple-600 border-1 rounded-lg p-4 inline-block">
+<div class="text-xl font-semibold text-gray-900">
+DON'T Let Bad Examples Blind You
+</div>
 </div>
 </v-click>
 

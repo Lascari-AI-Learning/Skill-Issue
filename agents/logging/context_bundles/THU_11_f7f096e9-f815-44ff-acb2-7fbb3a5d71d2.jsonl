@@ -1,0 +1,4 @@
+{"operation": "prompt", "prompt": "Within the meme slide, can we adjust the \"don't let the thing the opportunity\" portion to be a darker color? Also, have it styled in a way with the like cards with borders as done in the hook slide."}
+{"operation": "read", "file_path": "slides/03-the-hook.md"}
+{"operation": "read", "file_path": "slides/04-the-meme.md"}
+{"operation": "prompt", "prompt": "Can we make it so \"don't\" is in all caps and then just says \"don't let bad opera blind you\"?"}

@@ -3,64 +3,76 @@ theme: ../
 layout: default
 ---
 
-# This Isn't New
+# Before We Get Into the "How"...
 
-<div class="grid grid-cols-2 gap-8 mt-8">
+<div class="text-lg text-gray-600 mb-6">Let's make this concrete. Think about working with a junior engineer.</div>
 
-<div>
-<h3 class="text-xl font-bold text-blue-400 mb-4">Working with a Junior Engineer</h3>
+<div class="grid grid-cols-2 gap-8">
+
+<div class="bg-white border-blue-600 border-1 rounded-lg p-5">
+<h3 class="text-xl font-bold text-blue-600 mb-4">The Handoff</h3>
 <div class="space-y-3">
 <div v-click class="flex items-start gap-2">
-  <span class="text-green-400">1.</span>
-  <span>You determine what the task should be</span>
+  <span class="text-blue-600 font-bold">1.</span>
+  <span>You scope out the task</span>
 </div>
 <div v-click class="flex items-start gap-2">
-  <span class="text-green-400">2.</span>
+  <span class="text-blue-600 font-bold">2.</span>
   <span>You hand it off</span>
 </div>
 <div v-click class="flex items-start gap-2">
-  <span class="text-green-400">3.</span>
-  <span>You review the PR</span>
+  <span class="text-blue-600 font-bold">3.</span>
+  <span>They implement <span class="text-gray-400 italic text-sm">(you're not watching)</span></span>
 </div>
-<div v-click class="flex items-start gap-2 text-gray-400 italic">
-  <span class="text-yellow-400">?</span>
-  <span>HOW it gets done? You don't control that</span>
+<div v-click class="flex items-start gap-2">
+  <span class="text-blue-600 font-bold">4.</span>
+  <span>You review the PR, give feedback</span>
 </div>
 </div>
 </div>
 
-<div v-click>
-<h3 class="text-xl font-bold text-iron-ochre mb-4">But There's Standardization</h3>
+<div v-click class="bg-white border-emerald-600 border-1 rounded-lg p-5">
+<h3 class="text-xl font-bold text-emerald-600 mb-4">But You Don't Just Wing It</h3>
 <div class="space-y-2 text-lg">
 <div class="flex items-center gap-2">
-  <span class="text-gray-400">-</span>
-  <span>Commit rules</span>
+  <span class="text-emerald-600">→</span>
+  <span>Tests that must pass</span>
 </div>
 <div class="flex items-center gap-2">
-  <span class="text-gray-400">-</span>
-  <span>Tests must pass</span>
+  <span class="text-emerald-600">→</span>
+  <span>Commit rules & linting</span>
 </div>
 <div class="flex items-center gap-2">
-  <span class="text-gray-400">-</span>
-  <span>GitHub Actions</span>
+  <span class="text-emerald-600">→</span>
+  <span>GitHub Actions / CI</span>
 </div>
 <div class="flex items-center gap-2">
-  <span class="text-gray-400">-</span>
+  <span class="text-emerald-600">→</span>
   <span>Company protocols</span>
 </div>
 <div class="flex items-center gap-2">
-  <span class="text-gray-400">-</span>
-  <span>Documentation</span>
+  <span class="text-emerald-600">→</span>
+  <span>Documentation to read first</span>
 </div>
 </div>
 </div>
 
 </div>
 
-<div v-click class="mt-8 p-4 bg-ash-graphite rounded-lg text-center text-xl">
-<span class="text-gray-300">The same docs you'd give a new junior</span> = <span class="font-bold text-blue-400">what you give the LLM</span>
+<v-click>
+<div class="mt-6 bg-white border-amber-600 border-1 rounded-lg p-4 text-center text-xl">
+<span class="text-gray-700">Working with AI is the same.</span> <span class="font-bold text-amber-600">Encode this information so the AI can operate at scale.</span>
 </div>
+</v-click>
 
 <!--
-This isn't a new concept - every engineering team already does this. When you onboard a junior engineer, you don't control HOW they write code line by line. You give them the task, the context, the standards, and you review the output. The key is implicit and explicit standardization - commit rules, tests, CI/CD, documentation. The goal with skills is to transition that standardization into something the LLM can act upon. The same docs you'd hand a new hire? That's what you encode for the AI.
+Before we get into the actual techniques - let's make this concrete. Handing something off to a computer can feel jarring. So think about it like working with a junior engineer you just brought onto the team.
+
+If you just say "here's a ticket: update this service" and expect magic - what's going to happen? That PR is probably not going to be amazing.
+
+But in an organization, there's standardization. The flow is: scope the task, hand it off, they implement (you don't watch over their shoulder), you review the PR and give feedback. You don't control HOW they write each line.
+
+BUT you don't just wing it either. You have tests, commit rules, CI/CD, company protocols, documentation they read before touching core code.
+
+Working with AI is similar - you need to figure out how to encode this same information so the AI can operate at scale across a wide variety of tasks. The end goal: give it a scoped task, it goes off and does it, you review the PR and make a few changes.
 -->

@@ -1,0 +1,4 @@
+{"operation": "prompt", "prompt": "Within the mental model slide, I kind of want to have it be a bridge from the question \"What do we do to build trust in an AI system?\" to the idea that before we get into actually how to get an AI system to do it, I want to bring it back to something that's more concrete and what more people are working with. The idea of handing something off to a computer can be just a little jarring in general. So let's think of this like we're working with a junior engineer you just brought onto the team. If "}
+{"operation": "read", "file_path": "slides/05-the-question.md"}
+{"operation": "read", "file_path": "slides/06-mental-model.md"}
+{"operation": "read", "file_path": "slides/04-the-meme.md"}
