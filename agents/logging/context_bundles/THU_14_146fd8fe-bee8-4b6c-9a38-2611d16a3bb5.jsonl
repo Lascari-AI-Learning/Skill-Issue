@@ -1,0 +1,26 @@
+{"operation": "prompt", "prompt": "please go through all the slides and make sure the headers all have words first letter capitalized.\\\n\\\nIE. API credits used -> API Credits Used"}
+{"operation": "read", "file_path": "slides/05-the-question.md"}
+{"operation": "read", "file_path": "slides/00-title.md"}
+{"operation": "read", "file_path": "slides/03-the-hook.md"}
+{"operation": "read", "file_path": "slides/09-what-skills-do-i-need.md"}
+{"operation": "read", "file_path": "slides/04-the-meme.md"}
+{"operation": "read", "file_path": "slides/01-the-problem.md"}
+{"operation": "read", "file_path": "slides/02-about-me.md"}
+{"operation": "read", "file_path": "slides/07-what-is-a-skill.md"}
+{"operation": "read", "file_path": "slides/08-how-skills-work.md"}
+{"operation": "read", "file_path": "slides/06-mental-model.md"}
+{"operation": "read", "file_path": "slides/10-the-process.md"}
+{"operation": "read", "file_path": "slides/11-example-skill.md"}
+{"operation": "read", "file_path": "slides/12-key-takeaways.md"}
+{"operation": "read", "file_path": "slides/99-conclusion.md"}
+{"operation": "prompt", "prompt": "They are not all done. I'm talking about h3s and subheaders as well. So it's like in how Skill works. I see create a skill and d file like \"File\" should be capitalized and such like that. Like, really, majority of the text should be throughout the entire presentation should have this format."}
+{"operation": "read", "file_path": "slides/12-key-takeaways.md"}
+{"operation": "read", "file_path": "slides/07-what-is-a-skill.md"}
+{"operation": "read", "file_path": "slides/06-mental-model.md"}
+{"operation": "read", "file_path": "slides/10-the-process.md"}
+{"operation": "read", "file_path": "slides/01-the-problem.md"}
+{"operation": "read", "file_path": "slides/09-what-skills-do-i-need.md"}
+{"operation": "read", "file_path": "slides/08-how-skills-work.md"}
+{"operation": "read", "file_path": "slides/11-example-skill.md"}
+{"operation": "read", "file_path": "slides/05-the-question.md"}
+{"operation": "read", "file_path": "slides/03-the-hook.md"}

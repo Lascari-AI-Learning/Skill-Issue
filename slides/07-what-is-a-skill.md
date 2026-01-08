@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="text-4xl text-center mb-12 text-gray-900 font-bold">What is a Skill?</div>
+<div class="text-4xl text-center mb-12 text-gray-900 font-bold">What Is a Skill?</div>
 
 <div class="grid grid-cols-3 gap-6">
 <v-clicks>

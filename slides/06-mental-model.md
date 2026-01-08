@@ -61,7 +61,8 @@ layout: default
 
 <v-click>
 <div class="mt-6 bg-white border-amber-600 border-1 rounded-lg p-4 text-center text-xl">
-<span class="text-gray-700">Working with AI is the same.</span> <span class="font-bold text-amber-600">Encode this information so the AI can operate at scale.</span>
+<div class="text-gray-700">Working with AI is the same.</div>
+<div class="font-bold text-amber-600">Encode this information so the AI can operate at scale.</div>
 </div>
 </v-click>
 

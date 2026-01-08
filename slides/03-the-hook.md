@@ -21,7 +21,7 @@ layout: center
     </div>
     <div class="bg-white border-blue-600 border-1 rounded-lg p-4 text-sm text-center flex items-center justify-center">
       <p>
-        API credits used<br/><br/>
+        API Credits Used<br/><br/>
         <span class="font-semibold text-xl"><span class="text-blue-600 text-2xl">~$864</span> (+ $200/mo subscription)</span>
       </p>
     </div>

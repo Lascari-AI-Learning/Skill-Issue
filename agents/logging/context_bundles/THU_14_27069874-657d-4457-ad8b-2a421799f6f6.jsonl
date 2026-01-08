@@ -1,0 +1,6 @@
+{"operation": "prompt", "prompt": "After the conclusion slide, can we make a references slide that includes all the links throughout the presentation, and then also the following links?\\\n\\\nhttps://github.com/anthropics/skills\\\nhttps://github.com/anthropics/skills/tree/main/skills/skill-creator\\\nhttps://browsermcp.io/"}
+{"operation": "read", "file_path": "slides/99-conclusion.md"}
+{"operation": "write", "file_path": "slides/100-references.md", "tool_input": {"content_length": 2848}}
+{"operation": "prompt", "prompt": "Can we adjust the numbering to be:\n1. Conclusion\n2. References  And then update everything?"}
+{"operation": "prompt", "prompt": "Minor thing here, but in the process slide in the build, it's okay. We have like a don't know where to start there is like literally a skill for Promethropic that generates skills so that you know you can get a very first good attempt and kind of put this in the build block and link it out all right."}
+{"operation": "read", "file_path": "slides/10-the-process.md"}

@@ -1,0 +1,9 @@
+{"operation": "prompt", "prompt": "On the problem side, can we make it so that the 20% PRs per author is green? And then also, the Great and Catastrophic can we make those all caps?"}
+{"operation": "read", "file_path": "slides/01-the-problem.md"}
+{"operation": "prompt", "prompt": "In the mental model slide, can we make it so that in the orange line, \"Working with I\" is the same as encoding this information so AI can operate at scale. Is on a different line below?"}
+{"operation": "read", "file_path": "slides/06-mental-model.md"}
+{"operation": "prompt", "prompt": "In the \"What Skills Do I Need?\" slide, on the first scene, there's like this different roles, different problems, different skills. Can you make this so the text is black and then instead of commas it's periods and then all the words in this are capitalized? "}
+{"operation": "read", "file_path": "slides/09-what-skills-do-i-need.md"}
+{"operation": "prompt", "prompt": "only the first letter of each word should be caps"}
+{"operation": "prompt", "prompt": "Make the text not bold and add some spacing between each block"}
+{"operation": "prompt", "prompt": "can we add seperator between the cards and text.\\\n\\\nAlso make the text alittle heavier"}

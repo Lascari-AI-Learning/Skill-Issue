@@ -1,0 +1,24 @@
+{"operation": "prompt", "prompt": "Please update the example skill to use the actual flow as detailed in @agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/context/frontend-debug-reference/ \\\n\\\ngenerally like the idea here is that front-end state management can be a bitch, it is not fun, and like I'm a decent front-end developer, but I am by no means a true front-end engineer that understands all of the little nitty-gritty of React, Next.js, and whatever this is. So the flow that I found myself doing a lot was like okay"}
+{"operation": "read", "file_path": "slides/11-example-skill.md"}
+{"operation": "read", "file_path": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/context/frontend-debug-reference/browser-mcp-commands/critique.md"}
+{"operation": "read", "file_path": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/context/frontend-debug-reference/browser-mcp-skill/SKILL.md"}
+{"operation": "read", "file_path": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/context/frontend-debug-reference/browser-mcp-commands/debug.md"}
+{"operation": "read", "file_path": "agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/context/frontend-debug-reference/browser-mcp-skill/workflows/debug.md"}
+{"operation": "write", "file_path": "slides/11-example-skill.md", "tool_input": {"content_length": 8738}}
+{"operation": "prompt", "prompt": "From the problem, can we make the IMA front-end def gray text be gone? Also, set it up so that the problem shows up with the manual debugging loop, and the next click brings up the blue block."}
+{"operation": "prompt", "prompt": "On the problem page as well, can we make the left text darker? And then, like the border just a little bit darker? And then, remove all of the gray text? And then, it should be screenshot the page."}
+{"operation": "prompt", "prompt": "For the skill section, now can we set this up that it shows two code blocks? It's like we have the skill on the left and then the workflow on the right. Here, the workflow would just be a condensed version of the XML workflow with ellipses and stuff to make it a little bit simpler. Then, the next thing we would go to the cleaned-up workflow flow thing."}
+{"operation": "read", "file_path": "slides/11-example-skill.md", "tool_input": {"limit": 40, "offset": 44}}
+{"operation": "prompt", "prompt": "Can we just minorly change the workflow where there's the setup phase, and then the debugging loop that has steps to observe, instrument, refresh, and fix. Fix would be the next phase, and cleanup would be the last phase. Then you can see the full flow."}
+{"operation": "read", "file_path": "slides/11-example-skill.md", "tool_input": {"limit": 55, "offset": 83}}
+{"operation": "prompt", "prompt": "Can we update that in the workflow XML as well? Also, can we put the workflow as a title in the top and justify that to the right?"}
+{"operation": "prompt", "prompt": "Almost the workflow should be in the same location as what the skill is, but it should be put in a div and then justified between them so that they're each in the opposite side of the main div."}
+{"operation": "prompt", "prompt": "Okay, in the loop of the XML block, can we instead of phases these are now steps and can we color them a different color than blue so that phases are then blue only?"}
+{"operation": "prompt", "prompt": "Okay, now we're essentially the same color as the workflow. Can we fix this so it'd be a separate color?"}
+{"operation": "prompt", "prompt": "Can we center the title on this slide?"}
+{"operation": "prompt", "prompt": "Can we remove the round repeat arrow from the debug loop block?"}
+{"operation": "prompt", "prompt": "Can we now adjust this to instead of being like a block that says the workflow, like, at first we just show like that flow of the like images of the setup, the loop, the fix and stuff. And then we have two more clicks that's like a div that says like below it there'd be like two div that say agent handles the mechanical TDM screenshotting logs, whatever. Then a user confirms like is the right page? Like I'm seeing something different on the page. Like is this fix seem right based off of you know"}
+{"operation": "read", "file_path": "slides/11-example-skill.md", "tool_input": {"limit": 70, "offset": 90}}
+{"operation": "prompt", "prompt": "Okay, this is good, but I want it so that everything is not within this orange workflow div. What I would like is that essentially the two blocks that aren't the workflow are not within the div, and then the actual workflow is within the orange div. But we remove the workflow header if that makes sense."}
+{"operation": "prompt", "prompt": "From this slide, remove the inaction, like purple scene completely."}
+{"operation": "read", "file_path": "slides/11-example-skill.md", "tool_input": {"limit": 50, "offset": 155}}

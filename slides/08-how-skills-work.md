@@ -15,7 +15,7 @@ clicks: 8
 <!-- Scene 1: The SKILL.md file with frontmatter -->
 <div v-click="1" v-click.hide="2" class="absolute inset-0">
 <div class="bg-white border-blue-600 border-1 rounded-lg p-6">
-<h3 class="text-xl font-bold text-blue-600 mb-4">Step 1: Create a SKILL.md file</h3>
+<h3 class="text-xl font-bold text-blue-600 mb-4">Step 1: Create a SKILL.md File</h3>
 <div class="grid grid-cols-3 gap-6">
 <div class="col-span-2 bg-gray-50 border border-gray-200 rounded-lg p-4 font-mono text-sm">
 <div class="text-gray-500 mb-2"># pdf-processing/SKILL.md</div>
@@ -26,7 +26,7 @@ clicks: 8
 <div class="text-amber-600">---</div>
 </div>
 <div class="col-span-1">
-<div class="text-gray-700 font-medium mb-3">That's it for the minimum spec:</div>
+<div class="text-gray-700 font-medium mb-3">That's It for the Minimum Spec:</div>
 <ul class="space-y-2 text-gray-900">
 <li><span class="text-blue-600 font-bold">name</span> - identifier (lowercase, hyphens)</li>
 <li><span class="text-blue-600 font-bold">description</span> - what it does & when to use</li>
@@ -39,7 +39,7 @@ clicks: 8
 <!-- Scene 2: Add content/instructions -->
 <div v-click="2" v-click.hide="3" class="absolute inset-0">
 <div class="bg-white border-blue-600 border-1 rounded-lg p-6">
-<h3 class="text-xl font-bold text-blue-600 mb-4">Step 2: Add instructions</h3>
+<h3 class="text-xl font-bold text-blue-600 mb-4">Step 2: Add Instructions</h3>
 <div class="grid grid-cols-3 gap-6">
 <div class="col-span-2 bg-gray-50 border border-gray-200 rounded-lg p-4 font-mono text-sm">
 <div class="text-gray-500 mb-2"># pdf-processing/SKILL.md</div>
@@ -56,7 +56,7 @@ clicks: 8
 <div class="text-gray-500 text-xs">Run scripts/fill_form.py...</div>
 </div>
 <div class="col-span-1">
-<div class="text-gray-700 font-medium mb-3">The markdown body contains:</div>
+<div class="text-gray-700 font-medium mb-3">The Markdown Body Contains:</div>
 <ul class="space-y-2 text-gray-900">
 <li>Step-by-step instructions</li>
 <li>Examples of inputs/outputs</li>
@@ -71,7 +71,7 @@ clicks: 8
 <!-- Scene 3: Folder structure -->
 <div v-click="3" v-click.hide="4" class="absolute inset-0">
 <div class="bg-white border-blue-600 border-1 rounded-lg p-6">
-<h3 class="text-xl font-bold text-blue-600 mb-4">Step 3: Add supporting files</h3>
+<h3 class="text-xl font-bold text-blue-600 mb-4">Step 3: Add Supporting Files</h3>
 <div class="grid grid-cols-3 gap-6">
 <div class="col-span-2 bg-gray-50 border border-gray-200 rounded-lg p-4 font-mono text-sm">
 <div class="text-gray-900">pdf-processing/</div>
@@ -86,7 +86,7 @@ clicks: 8
 <div class="ml-8 text-gray-600">└── form-template.pdf</div>
 </div>
 <div class="col-span-1">
-<div class="text-gray-700 font-medium mb-3">Optional directories:</div>
+<div class="text-gray-700 font-medium mb-3">Optional Directories:</div>
 <ul class="space-y-2 text-gray-900">
 <li><span class="text-blue-600 font-bold">scripts/</span> - executable code</li>
 <li><span class="text-blue-600 font-bold">references/</span> - detailed docs</li>
@@ -100,7 +100,7 @@ clicks: 8
 <!-- Scene 4: The XML block agents see -->
 <div v-click="4" v-click.hide="5" class="absolute inset-0">
 <div class="bg-white border-purple-600 border-1 rounded-lg p-6">
-<h3 class="text-xl font-bold text-purple-600 mb-4">What the agent sees at startup</h3>
+<h3 class="text-xl font-bold text-purple-600 mb-4">What the Agent Sees at Startup</h3>
 <div class="grid grid-cols-4 gap-6">
 <div class="col-span-3 bg-gray-50 border border-gray-200 rounded-lg p-4 font-mono text-xs">
 <div class="text-gray-500">&lt;!-- In the system prompt --&gt;</div>
@@ -118,11 +118,11 @@ clicks: 8
 <div class="text-amber-600">&lt;/available_skills&gt;</div>
 </div>
 <div class="col-span-1">
-<div class="text-gray-700 font-medium mb-3">Progressive disclosure:</div>
+<div class="text-gray-700 font-medium mb-3">Progressive Disclosure:</div>
 <ul class="space-y-2 text-gray-900 text-sm">
 <li><span class="text-green-600 font-bold">~100 tokens</span> per skill</li>
-<li>Only metadata loaded</li>
-<li>Full content on demand</li>
+<li>Only Metadata Loaded</li>
+<li>Full Content on Demand</li>
 </ul>
 </div>
 </div>

@@ -19,7 +19,7 @@ layout: default
     </div>
     <div class="flex flex-col space-y-2">
       <ul class="list-disc list-inside text-lg ml-16">
-        <li><span class="text-red-400 font-bold">+20%</span> PRs per author, <span class="text-orange-400 font-bold">+23.5%</span> incidents per PR, <span class="text-red-500 font-bold">+30%</span> change failure rate</li>
+        <li><span class="text-green-400 font-bold">+20%</span> PRs per author, <span class="text-orange-400 font-bold">+23.5%</span> incidents per PR, <span class="text-red-500 font-bold">+30%</span> change failure rate</li>
       </ul>
     </div>
   </div>
@@ -35,8 +35,8 @@ layout: default
     </div>
     <div class="flex flex-col space-y-2">
       <ul class="list-disc list-inside text-lg ml-16">
-        <li>Good practices become <span class="text-green-500 font-semibold">great</span></li>
-        <li>Bad practices become <span class="text-red-500 font-semibold">catastrophic</span></li>
+        <li>Good practices become <span class="text-green-500 font-semibold">GREAT</span></li>
+        <li>Bad practices become <span class="text-red-500 font-semibold">CATASTROPHIC</span></li>
       </ul>
     </div>
   </div>

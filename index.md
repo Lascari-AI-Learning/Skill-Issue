@@ -35,15 +35,15 @@ src: ./slides/08-how-skills-work.md
 ---
 
 ---
-src: ./slides/09-example-skill.md
+src: ./slides/09-what-skills-do-i-need.md
 ---
 
 ---
-src: ./slides/10-occams-razor.md
+src: ./slides/10-the-process.md
 ---
 
 ---
-src: ./slides/11-the-vision.md
+src: ./slides/11-example-skill.md
 ---
 
 ---
@@ -51,5 +51,9 @@ src: ./slides/12-key-takeaways.md
 ---
 
 ---
-src: ./slides/99-conclusion.md
+src: ./slides/13-conclusion.md
+---
+
+---
+src: ./slides/14-references.md
 ---

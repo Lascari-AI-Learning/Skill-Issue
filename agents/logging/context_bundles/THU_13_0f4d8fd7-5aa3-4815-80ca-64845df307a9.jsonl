@@ -1,0 +1,17 @@
+{"operation": "prompt", "prompt": "I'm now onto the vision and key takeaways, and I kind of want to merge these into one slide that is the key takeaways. The idea is more that it's like you know, we don't want to let the bad examples blind you. The technology's coming used to learn it well, and like for skilled engineers, AI is an absolutely huge force multiplier. It's like if you know what you're doing, you will see exponential gains, and it's like start small. The road to 10X is won by you know, incremental improvements, and th"}
+{"operation": "read", "file_path": "slides/12-the-vision.md"}
+{"operation": "read", "file_path": "slides/13-key-takeaways.md"}
+{"operation": "write", "file_path": "slides/12-key-takeaways.md", "tool_input": {"content_length": 3422}}
+{"operation": "prompt", "prompt": "I like the side highlights on the thing. Can we make everything like a card with a background so it's easier to read?"}
+{"operation": "read", "file_path": "slides/12-key-takeaways.md"}
+{"operation": "prompt", "prompt": "No, like everything should have a card in the background. Look at the hook where it's like everything has this car that separates it with the background. I'm fine with one side only having a thicker border and no things, but I want it to have a card behind it that's white, which then kind of makes the text pop."}
+{"operation": "read", "file_path": "slides/03-the-hook.md"}
+{"operation": "read", "file_path": "slides/12-key-takeaways.md"}
+{"operation": "prompt", "prompt": "Can we adjust this to be like the token spend per engineer? Then it will do 20% more effective. This thing would be token spend per engineer, let's just say $400 for 10 engineers. That's $4,000 a month. The average engineer cost is let's say $10,000 a month. That means it's 20% more affected. So it's like okay, $4,000 to $20,000. That's a 5x ROI, and I think $20,000 is conservative. That would be in the speaker notes."}
+{"operation": "read", "file_path": "slides/12-key-takeaways.md"}
+{"operation": "prompt", "prompt": "Can we make the mentality shift red and then the math purple?"}
+{"operation": "prompt", "prompt": "Make the text of the math black like everything else, but maintain the purple side."}
+{"operation": "prompt", "prompt": "For all the titles, can we make like a lot of the words capitalized with the first letter or the first letter capitalized? Just because this is the closeout, and I just kind of want things to hit hard. So like, don't let should be like L, bad capital B, examples, all of these. But then like the is and all that stuff should be all lowercase and stuff."}
+{"operation": "read", "file_path": "slides/12-key-takeaways.md"}
+{"operation": "prompt", "prompt": "Can we do the same process for all of the texts within the math section? Like all the subtext? Just because this is a very key area, and I want it to be very clearly conveyed?"}
+{"operation": "read", "file_path": "slides/12-key-takeaways.md", "tool_input": {"limit": 55}}
