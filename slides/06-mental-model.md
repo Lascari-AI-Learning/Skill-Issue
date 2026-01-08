@@ -9,22 +9,22 @@ layout: default
 
 <div class="grid grid-cols-2 gap-8">
 
-<div class="bg-white border-blue-600 border-1 rounded-lg p-5">
+<div v-click class="bg-white border-blue-600 border-1 rounded-lg p-5">
 <h3 class="text-xl font-bold text-blue-600 mb-4">The Handoff</h3>
 <div class="space-y-3">
-<div v-click class="flex items-start gap-2">
+<div class="flex items-start gap-2">
   <span class="text-blue-600 font-bold">1.</span>
   <span>You scope out the task</span>
 </div>
-<div v-click class="flex items-start gap-2">
+<div class="flex items-start gap-2">
   <span class="text-blue-600 font-bold">2.</span>
   <span>You hand it off</span>
 </div>
-<div v-click class="flex items-start gap-2">
+<div class="flex items-start gap-2">
   <span class="text-blue-600 font-bold">3.</span>
   <span>They implement <span class="text-gray-400 italic text-sm">(you're not watching)</span></span>
 </div>
-<div v-click class="flex items-start gap-2">
+<div class="flex items-start gap-2">
   <span class="text-blue-600 font-bold">4.</span>
   <span>You review the PR, give feedback</span>
 </div>

@@ -1,0 +1,2 @@
+{"operation": "prompt", "prompt": "In the mental model slide, can we make it so that instead of in the handoff block, everything shows up as one bullet? The first click just shows the handoff block, the next one shows the entire next block, so that it just is less clicks."}
+{"operation": "read", "file_path": "slides/06-mental-model.md"}
