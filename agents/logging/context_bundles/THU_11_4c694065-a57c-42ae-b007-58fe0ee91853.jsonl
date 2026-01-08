@@ -1,0 +1,4 @@
+{"operation": "prompt", "prompt": "In the About Me slide, adjust it so that the background is three years as an AI engineer, past year has been independent consulting and contracting, and remove the built 30 agent line or 30+ Gen AI projects."}
+{"operation": "read", "file_path": "slides/02-about-me.md"}
+{"operation": "prompt", "prompt": "remove the 2 years building agentic systems"}
+{"operation": "prompt", "prompt": "say it 3 years AI Engineering, 1 Year Independent Contracting and Consulting"}

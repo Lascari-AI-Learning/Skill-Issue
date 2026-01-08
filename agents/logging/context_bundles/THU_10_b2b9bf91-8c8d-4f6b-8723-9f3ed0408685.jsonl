@@ -1,0 +1,35 @@
+{"operation": "prompt", "prompt": "Generally, this looks good, but I want to make the slides in line with the templates we have in place so that there is a consistent styling guide for this. For each slide, look through the slide templates for the description and figure out if any of them fit for what we're looking for. If so, adapt the slide to work with the template."}
+{"operation": "read", "file_path": "slide-templates/intro-what-well-cover/description.md"}
+{"operation": "read", "file_path": "slide-templates/title/description.md"}
+{"operation": "read", "file_path": "slide-templates/continuum-diagram/description.md"}
+{"operation": "read", "file_path": "slide-templates/icon-list-content/description.md"}
+{"operation": "read", "file_path": "slide-templates/conclusion-lets-connect/description.md"}
+{"operation": "read", "file_path": "slide-templates/three-to-one-takeaway/description.md"}
+{"operation": "read", "file_path": "slide-templates/extremes-to-middle/description.md"}
+{"operation": "read", "file_path": "slide-templates/about-me/description.md"}
+{"operation": "read", "file_path": "slide-templates/continuum-middle-ground/description.md"}
+{"operation": "read", "file_path": "slides/06-mental-model.md"}
+{"operation": "read", "file_path": "slides/05-the-question.md"}
+{"operation": "read", "file_path": "slides/00-title.md"}
+{"operation": "read", "file_path": "slides/07-what-is-a-skill.md"}
+{"operation": "read", "file_path": "slides/08-how-skills-work.md"}
+{"operation": "read", "file_path": "slides/01-the-problem.md"}
+{"operation": "read", "file_path": "slides/04-the-hook.md"}
+{"operation": "read", "file_path": "slides/09-example-skill.md"}
+{"operation": "read", "file_path": "slides/03-about-me.md"}
+{"operation": "read", "file_path": "slides/02-the-meme.md"}
+{"operation": "read", "file_path": "slides/10-occams-razor.md"}
+{"operation": "read", "file_path": "slides/12-key-takeaways.md"}
+{"operation": "read", "file_path": "slides/11-the-vision.md"}
+{"operation": "read", "file_path": "slides/99-conclusion.md"}
+{"operation": "read", "file_path": "slide-templates/three-to-one-takeaway/slide.md"}
+{"operation": "read", "file_path": "slide-templates/conclusion-lets-connect/slide.md"}
+{"operation": "read", "file_path": "slide-templates/extremes-to-middle/slide.md"}
+{"operation": "read", "file_path": "slide-templates/title/slide.md"}
+{"operation": "read", "file_path": "slide-templates/about-me/slide.md"}
+{"operation": "read", "file_path": "slide-templates/icon-list-content/slide.md"}
+{"operation": "read", "file_path": "slide-templates/continuum-diagram/slide.md"}
+{"operation": "write", "file_path": "slides/01-the-problem.md", "tool_input": {"content_length": 3714}}
+{"operation": "write", "file_path": "slides/04-the-hook.md", "tool_input": {"content_length": 3756}}
+{"operation": "write", "file_path": "slides/07-what-is-a-skill.md", "tool_input": {"content_length": 3902}}
+{"operation": "write", "file_path": "slides/99-conclusion.md", "tool_input": {"content_length": 1702}}

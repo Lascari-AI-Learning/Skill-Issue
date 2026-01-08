@@ -1,0 +1,8 @@
+{"operation": "prompt", "prompt": "In the problem slide, can we adapt this to have one of the AI amplifiers (whatever you have) be two separate lines? And then we can remove the grey - it's not his fault he didn't know what he was doing."}
+{"operation": "read", "file_path": "slides/01-the-problem.md"}
+{"operation": "prompt", "prompt": "Can we add somewhere on this slide, like ideally in the top? Like just a link to report that then hyperlinks to the following in our new tab.\\\n\\\nhttps://go.cortex.io/rs/563-WJM-722/images/2026-Benchmark-Report.pdf?version=0"}
+{"operation": "read", "file_path": "slides/01-the-problem.md"}
+{"operation": "prompt", "prompt": "Could we have these justified at separate ends? It's in the title thing, so \"The Problem\" on one side, and then on the other side, it's the \"Cortex 2026 Benchmark Report.\""}
+{"operation": "prompt", "prompt": "Can we center the text in the Cortex Report like top to bottom so it's on the same level as the h1?"}
+{"operation": "prompt", "prompt": "Can we adjust the final bullet to instead of \"I've seen this firsthand,\" to be something like \"We've all seen this firsthand,\" and \"It's like my story\" because I want to bring the audience in but also be like \"I understand where people are coming from.\""}
+{"operation": "read", "file_path": "slides/01-the-problem.md"}

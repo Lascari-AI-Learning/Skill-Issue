@@ -1,0 +1,9 @@
+{"operation": "prompt", "prompt": "can we adjust the hook slide to use the 3 to 1 template"}
+{"operation": "read", "file_path": "slides/03-the-hook.md"}
+{"operation": "read", "file_path": "slide-templates/three-to-one-takeaway/description.md"}
+{"operation": "read", "file_path": "slide-templates/three-to-one-takeaway/slide.md"}
+{"operation": "prompt", "prompt": "We adjust the first card to have the total input and outputs from the image in the context of the session."}
+{"operation": "prompt", "prompt": "@agents/sessions/2025-01-07_agent-skills-presentation_k8m3x9/context/images/line-count.png \\\n\\\nwant to show the actual line diffs and then like inputs, removals, net"}
+{"operation": "prompt", "prompt": "Kind of want to restructure this slide to be like:\n1. 95%+ code written by AI  Instead of the slide title being called \"The Proof\", it's going to be like \"My Past 30 Days, Is Adding Those Lines\". In the speaker notes, we should say something along the lines of: \"Across all my clients and personal projects, this many lines. It's not the total cost of tooling for Claude code; it's like the credits that I use. But it's $200/month, and then it's like my December income. I want ideas like this is don"}
+{"operation": "read", "file_path": "slides/03-the-hook.md"}
+{"operation": "prompt", "prompt": "Instead of saying \"production systems, not demos\" - this is kind of cringe. I'm like I'd rather it said \"across client and personal projects\", or something like that."}

@@ -10,21 +10,29 @@ layout: default
 <div>
 <div class="text-gray-300 mb-4">This is how <span class="font-bold text-iron-ochre">I</span> work - not comprehensive, but practical.</div>
 
-<div v-click class="bg-ash-graphite rounded-lg p-4">
-<div class="font-mono text-sm">
+<div v-click class="bg-ash-graphite rounded-lg p-3">
+<div class="font-mono text-xs leading-relaxed">
 <div class="text-gray-300">.claude/</div>
-<div class="ml-4 text-gray-400">settings.json</div>
-<div class="ml-4 text-blue-400">skills/</div>
-<div class="ml-8 text-green-400">agent-session/</div>
-<div class="ml-8 text-green-400">commit/</div>
-<div class="ml-8 text-green-400">pr-review/</div>
-<div class="ml-8 text-green-400">prime/</div>
-<div class="ml-8 text-gray-400">...</div>
+<div class="ml-2 text-blue-400">├── agents/ <span class="text-gray-500">(7 files)</span></div>
+<div class="ml-6 text-gray-500">└── research/ (5)</div>
+<div class="ml-2 text-blue-400">├── commands/ <span class="text-gray-500">(28 files)</span></div>
+<div class="ml-6 text-gray-500">├── agent-session/ (4)</div>
+<div class="ml-6 text-gray-500">├── browser-mcp/ (2)</div>
+<div class="ml-6 text-gray-500">├── development/ (3)</div>
+<div class="ml-6 text-gray-500">├── docs/ (7)</div>
+<div class="ml-6 text-gray-500">├── git/ (2)</div>
+<div class="ml-6 text-gray-500">├── prime/ (5)</div>
+<div class="ml-6 text-gray-500">└── ...</div>
+<div class="ml-2 text-blue-400">├── hooks/ <span class="text-gray-500">(3 files)</span></div>
+<div class="ml-2 text-blue-400">├── skills/ <span class="text-gray-500">(98 files)</span></div>
+<div class="ml-6 text-gray-500">├── agent-session/ (21)</div>
+<div class="ml-6 text-gray-500">├── docs-framework/ (52)</div>
+<div class="ml-6 text-gray-500">├── prompt-writing/ (10)</div>
+<div class="ml-6 text-gray-500">└── ...</div>
+<div class="ml-2 text-gray-400">├── settings.json</div>
+<div class="ml-2 text-gray-400">└── statuslines/</div>
+<div class="mt-2 text-iron-ochre font-bold text-sm">Total: 141 files</div>
 </div>
-</div>
-
-<div v-click class="mt-4 text-sm text-gray-400 italic">
-I have a lot of skills/commands built out - each one codifies a workflow I do repeatedly.
 </div>
 </div>
 

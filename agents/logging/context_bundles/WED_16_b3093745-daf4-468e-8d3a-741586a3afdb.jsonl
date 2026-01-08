@@ -1,0 +1,5 @@
+{"operation": "prompt", "prompt": "add to the proper slide my claude code config file tree\\\n\\\n.claude/\n  \u251c\u2500\u2500 agents/ (7 files)\n  \u2502   \u2514\u2500\u2500 research/ (5)\n  \u251c\u2500\u2500 commands/ (28 files)\n  \u2502   \u251c\u2500\u2500 agent-session/ (4)\n  \u2502   \u251c\u2500\u2500 browser-mcp/ (2)\n  \u2502   \u251c\u2500\u2500 core/ (1)\n  \u2502   \u251c\u2500\u2500 development/ (3)\n  \u2502   \u251c\u2500\u2500 docs/ (7)\n  \u2502   \u251c\u2500\u2500 git/ (2)\n  \u2502   \u251c\u2500\u2500 interview/ (1)\n  \u2502   \u251c\u2500\u2500 logging/ (1)\n  \u2502   \u251c\u2500\u2500 prime/ (5)\n  \u2502   \u2514\u2500\u2500 shell/ (1)\n  \u251c\u2500\u2500 hooks/ (3 files)\n  \u2502   \u251c\u2500\u2500 core/ (1)\n  \u2502   \u2514\u2500\u2500 logging/ (2)\n  \u251c\u2500\u2500 output-styles/ (2 files)\n  \u251c\u2500\u2500 settings.json\n  \u251c\u2500\u2500 se"}
+{"operation": "read", "file_path": "slides/07-what-is-a-skill.md"}
+{"operation": "read", "file_path": "slides/08-how-skills-work.md"}
+{"operation": "read", "file_path": "slides/03-about-me.md"}
+{"operation": "read", "file_path": "slides/09-example-skill.md"}

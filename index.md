@@ -7,15 +7,15 @@ src: ./slides/01-the-problem.md
 ---
 
 ---
-src: ./slides/02-the-meme.md
+src: ./slides/02-about-me.md
 ---
 
 ---
-src: ./slides/03-about-me.md
+src: ./slides/03-the-hook.md
 ---
 
 ---
-src: ./slides/04-the-hook.md
+src: ./slides/04-the-meme.md
 ---
 
 ---
