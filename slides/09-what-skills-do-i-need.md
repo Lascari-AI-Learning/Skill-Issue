@@ -12,7 +12,7 @@ clicks: 2
 <div class="relative min-h-96">
 
 <!-- Scene 1: Everyone has different workflows -->
-<div v-click="1" v-click.hide="2" class="absolute inset-0">
+<div v-if="$clicks >= 1 && $clicks < 2" class="absolute inset-0">
 <div class="bg-white border-blue-600 border-1 rounded-lg p-6">
 <h3 class="text-xl font-bold text-blue-600 mb-4">Everyone Has Different Workflows</h3>
 <div class="grid grid-cols-4 gap-4">
@@ -46,7 +46,7 @@ clicks: 2
 </div>
 
 <!-- Scene 2: My setup + "what do I even show?" -->
-<div v-click="2" class="absolute inset-0">
+<div v-if="$clicks >= 2" class="absolute inset-0">
 <div class="bg-white border-amber-600 border-1 rounded-lg p-6">
 <h3 class="text-xl font-bold text-amber-600 mb-4">I Have a Lot of Skills...</h3>
 <div class="grid grid-cols-3 gap-6">

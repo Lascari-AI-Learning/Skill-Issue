@@ -13,7 +13,7 @@ clicks: 8
 <div class="relative min-h-96">
 
 <!-- Scene 1: The SKILL.md file with frontmatter -->
-<div v-click="1" v-click.hide="2" class="absolute inset-0">
+<div v-if="$clicks >= 1 && $clicks < 2" class="absolute inset-0">
 <div class="bg-white border-blue-600 border-1 rounded-lg p-6">
 <h3 class="text-xl font-bold text-blue-600 mb-4">Step 1: Create a SKILL.md File</h3>
 <div class="grid grid-cols-3 gap-6">
@@ -37,7 +37,7 @@ clicks: 8
 </div>
 
 <!-- Scene 2: Add content/instructions -->
-<div v-click="2" v-click.hide="3" class="absolute inset-0">
+<div v-if="$clicks >= 2 && $clicks < 3" class="absolute inset-0">
 <div class="bg-white border-blue-600 border-1 rounded-lg p-6">
 <h3 class="text-xl font-bold text-blue-600 mb-4">Step 2: Add Instructions</h3>
 <div class="grid grid-cols-3 gap-6">
@@ -69,7 +69,7 @@ clicks: 8
 </div>
 
 <!-- Scene 3: Folder structure -->
-<div v-click="3" v-click.hide="4" class="absolute inset-0">
+<div v-if="$clicks >= 3 && $clicks < 4" class="absolute inset-0">
 <div class="bg-white border-blue-600 border-1 rounded-lg p-6">
 <h3 class="text-xl font-bold text-blue-600 mb-4">Step 3: Add Supporting Files</h3>
 <div class="grid grid-cols-3 gap-6">
@@ -98,7 +98,7 @@ clicks: 8
 </div>
 
 <!-- Scene 4: The XML block agents see -->
-<div v-click="4" v-click.hide="5" class="absolute inset-0">
+<div v-if="$clicks >= 4 && $clicks < 5" class="absolute inset-0">
 <div class="bg-white border-purple-600 border-1 rounded-lg p-6">
 <h3 class="text-xl font-bold text-purple-600 mb-4">What the Agent Sees at Startup</h3>
 <div class="grid grid-cols-4 gap-6">
@@ -130,7 +130,7 @@ clicks: 8
 </div>
 
 <!-- Scene 5: Worked example - User input, agent sees skills -->
-<div v-click="5" v-click.hide="6" class="absolute inset-0">
+<div v-if="$clicks >= 5 && $clicks < 6" class="absolute inset-0">
 <div class="bg-white border-amber-600 border-1 rounded-lg p-5">
 <h3 class="text-lg font-bold text-amber-600 mb-3">Worked Example</h3>
 <div class="grid grid-cols-3 gap-4 mb-3">
@@ -173,7 +173,7 @@ clicks: 8
 </div>
 
 <!-- Scene 6: Agent reads SKILL.md -->
-<div v-click="6" v-click.hide="7" class="absolute inset-0">
+<div v-if="$clicks >= 6 && $clicks < 7" class="absolute inset-0">
 <div class="bg-white border-amber-600 border-1 rounded-lg p-5">
 <h3 class="text-lg font-bold text-amber-600 mb-3">Worked Example</h3>
 <div class="grid grid-cols-3 gap-4 mb-3">
@@ -212,7 +212,7 @@ clicks: 8
 </div>
 
 <!-- Scene 7: Agent reads reference -->
-<div v-click="7" class="absolute inset-0">
+<div v-if="$clicks >= 7" class="absolute inset-0">
 <div class="bg-white border-amber-600 border-1 rounded-lg p-5">
 <h3 class="text-lg font-bold text-amber-600 mb-3">Worked Example</h3>
 <div class="grid grid-cols-3 gap-4 mb-3">

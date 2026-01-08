@@ -12,7 +12,7 @@ clicks: 6
 <div class="relative min-h-96">
 
 <!-- Scene 1: The problem this skill solves -->
-<div v-click="1" v-click.hide="3" class="absolute inset-0">
+<div v-if="$clicks >= 1 && $clicks < 3" class="absolute inset-0">
 <div class="bg-white border-blue-600 border-1 rounded-lg p-6">
 <h3 class="text-xl font-bold text-blue-600 mb-4">The Problem</h3>
 <div class="grid grid-cols-2 gap-6">
@@ -42,7 +42,7 @@ clicks: 6
 </div>
 
 <!-- Scene 2: The SKILL.md + Workflow -->
-<div v-click="3" v-click.hide="4" class="absolute inset-0">
+<div v-if="$clicks >= 3 && $clicks < 4" class="absolute inset-0">
 <div class="bg-white border-green-600 border-1 rounded-lg p-6">
 <div class="flex justify-between mb-4">
 <h3 class="text-xl font-bold text-green-600">The Skill</h3>
@@ -89,7 +89,7 @@ clicks: 6
 </div>
 
 <!-- Scene 3: The workflow -->
-<div v-click="4" class="absolute inset-0">
+<div v-if="$clicks >= 4" class="absolute inset-0">
 <!-- Workflow diagram in orange box -->
 <div class="bg-white border-amber-600 border-1 rounded-lg p-6">
 <div class="flex items-center gap-3">
